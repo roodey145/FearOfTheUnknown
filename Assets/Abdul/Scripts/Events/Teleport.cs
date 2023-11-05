@@ -7,7 +7,7 @@ public class Teleport : Event
     [SerializeField] private Transform _ancher;
     [SerializeField] private bool _matchProportionToAncherCenter = true;
 
-    protected override void _Action()
+    protected override void _Action(string activationEvent)
     {
         Vector3 positionToMoveTo = _ancher.position;
         Vector3 extraProportionPosition = _CalcExtraProportionPosition();

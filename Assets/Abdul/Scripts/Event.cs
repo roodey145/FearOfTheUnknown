@@ -23,7 +23,7 @@ public abstract class Event : MonoBehaviour
             {
                 _currentTarget = other.gameObject;
                 _TriggerEvent();
-                _Action();
+                _Action(_eventName);
                 _hasBeenExecuted = true;
             }
             
@@ -40,5 +40,5 @@ public abstract class Event : MonoBehaviour
         EventsController.RegisterEvent(_eventName);
     }
 
-    protected abstract void _Action();
+    protected abstract void _Action(string activationEvent);
 }
