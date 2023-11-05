@@ -377,6 +377,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -431,6 +436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -931,6 +941,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -985,6 +1000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -1355,6 +1375,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1410,6 +1435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1434,6 +1464,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 691406563016689986, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1481667935582755483, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -1478,6 +1513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -1642,6 +1682,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1696,6 +1741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -2161,6 +2211,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2216,6 +2271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2250,6 +2310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
@@ -2320,6 +2385,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2374,6 +2444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -2798,6 +2873,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2853,6 +2933,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2877,6 +2962,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2931,6 +3021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -3040,6 +3135,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3094,6 +3194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -3383,7 +3488,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &316266043
 Transform:
@@ -3578,6 +3683,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3632,6 +3742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -3909,10 +4024,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 691406563016689986, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Short_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -4798,6 +4923,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4852,6 +4982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -5003,12 +5138,13 @@ GameObject:
   m_Component:
   - component: {fileID: 465972930}
   - component: {fileID: 465972931}
+  - component: {fileID: 465972932}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &465972930
 Transform:
@@ -5299,6 +5435,37 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &465972932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465972929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.083333336
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: c3bec516a99852e40bd3da8f2854d38c, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1001 &473727017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5307,6 +5474,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1503639974}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5367,6 +5539,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -5395,6 +5572,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5450,6 +5632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -5486,7 +5673,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &486738704
 Transform:
@@ -5695,6 +5882,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5749,6 +5941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -6110,6 +6307,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6165,6 +6367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -6189,6 +6396,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6243,6 +6455,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -6352,6 +6569,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6406,6 +6628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -6521,6 +6748,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6575,6 +6807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6698,6 +6935,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6767,6 +7009,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6821,6 +7068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -7014,6 +7266,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7073,6 +7330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -7686,6 +7948,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7740,6 +8007,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -7843,6 +8115,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7898,6 +8175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -7922,6 +8204,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7977,6 +8264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8001,6 +8293,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8055,6 +8352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -8233,7 +8535,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1354453937}
   m_SourcePrefab: {fileID: 100100000, guid: d7fad2304dfbc2b4e96938a509cb92fc, type: 3}
 --- !u!1001 &765846450
 PrefabInstance:
@@ -8243,6 +8549,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8298,6 +8609,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8322,6 +8638,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8377,6 +8698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8401,6 +8727,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8456,6 +8787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8480,6 +8816,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8534,6 +8875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -8727,6 +9073,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8781,6 +9132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -9259,6 +9615,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9314,6 +9675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9333,6 +9699,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9388,6 +9759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -9412,10 +9788,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 691406563016689986, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Short_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -9491,6 +9877,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9546,6 +9937,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -9570,6 +9966,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9624,6 +10025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -9733,6 +10139,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9787,6 +10198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -10070,6 +10486,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10124,6 +10545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -10491,6 +10917,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10545,6 +10976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10653,6 +11089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Corner (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
@@ -11321,6 +11762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Corner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
@@ -12118,6 +12564,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12178,6 +12629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -12202,6 +12658,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12257,6 +12718,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -12281,6 +12747,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12335,6 +12806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12868,6 +13344,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12922,6 +13403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13780,10 +14266,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 691406563016689986, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Short_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -14027,6 +14523,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14081,6 +14582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -14190,6 +14696,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14245,6 +14756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -14269,6 +14785,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14323,6 +14844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -14604,6 +15130,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14658,6 +15189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15104,6 +15640,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15158,6 +15699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -15367,6 +15913,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15421,6 +15972,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -16015,6 +16571,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1354453934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 762100464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1354453937
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354453934}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1359829822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16127,6 +16711,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16182,6 +16771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -16206,6 +16800,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16266,6 +16865,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -16290,6 +16894,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16344,6 +16953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -16621,6 +17235,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16676,6 +17295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -16700,6 +17324,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16754,6 +17383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -16874,6 +17508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16943,6 +17582,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16997,6 +17641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -17119,6 +17768,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17173,6 +17827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -17230,6 +17889,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17284,6 +17948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -17471,6 +18140,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1503639974}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17535,6 +18209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -17662,6 +18341,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17716,6 +18400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -17974,6 +18663,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18028,6 +18722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -18147,6 +18846,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18201,6 +18905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -18404,7 +19113,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1503639974
 Transform:
@@ -18517,6 +19226,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18571,6 +19285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18763,6 +19482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
@@ -19007,6 +19731,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1503639974}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19071,6 +19800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -19198,6 +19932,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19252,6 +19991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -19813,6 +20557,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19867,6 +20616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -20241,6 +20995,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20296,6 +21055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -20320,6 +21084,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20374,6 +21143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -20819,6 +21593,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1503639974}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20879,6 +21658,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -20913,6 +21697,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20967,6 +21756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -21496,6 +22290,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21550,6 +22349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -21659,6 +22463,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21713,6 +22522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -21822,6 +22636,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21876,6 +22695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22390,6 +23214,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22445,6 +23274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -22473,6 +23307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall_Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
@@ -22543,6 +23382,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22597,6 +23441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -22795,6 +23644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22864,6 +23718,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22918,6 +23777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -23209,6 +24073,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23264,6 +24133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -23288,6 +24162,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23342,6 +24221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -23471,6 +24355,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23525,6 +24414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -23634,6 +24528,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -23694,6 +24593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -23718,10 +24622,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 691406563016689986, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Short_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -23886,6 +24800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23955,6 +24874,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24010,6 +24934,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -24046,6 +24975,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24100,6 +25034,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -24299,6 +25238,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24353,6 +25297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -24452,6 +25401,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 4667403640142469047, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6511851839710952928, guid: a8bdd04b880f2a44292ecf21699df12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24506,6 +25460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Wall_Doorway (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264977132237216898, guid: a8bdd04b880f2a44292ecf21699df12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24694,6 +25653,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24748,6 +25712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -24862,6 +25831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Corner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1027530615622146412, guid: 8128dfdf0581f32408093912b372e29f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8597683450409795557, guid: 8128dfdf0581f32408093912b372e29f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24931,6 +25905,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24986,6 +25965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -25010,6 +25994,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25064,6 +26053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -25788,6 +26782,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25842,6 +26841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
@@ -26119,6 +27123,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26174,6 +27183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldHouse_Long_Wall (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -26198,6 +27212,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 486738704}
     m_Modifications:
+    - target: {fileID: 330842620627847742, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1553152215776970647, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26252,6 +27271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OldHouse_Long_Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3846043558934040318, guid: 6c14f4786465c8140ba7136e478a1571,
         type: 3}

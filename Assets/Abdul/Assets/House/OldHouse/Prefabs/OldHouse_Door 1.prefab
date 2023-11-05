@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5873630885029327012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OldHouse_Door 1
-  m_TagString: Untagged
+  m_TagString: Geometry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7295762742282604632}
   - component: {fileID: 1011887005713509992}
   - component: {fileID: 4885208580770000227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 8483787489804663135}
   - component: {fileID: 5442963486302226147}
   - component: {fileID: 8134353834570823605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_Hinges
   m_TagString: Untagged
   m_Icon: {fileID: 0}

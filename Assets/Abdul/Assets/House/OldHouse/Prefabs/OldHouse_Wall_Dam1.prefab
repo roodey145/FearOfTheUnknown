@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438386891076086681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OldHouse_Wall_Dam1
-  m_TagString: Untagged
+  m_TagString: Geometry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 90614516658181438}
   - component: {fileID: 8929730992933718305}
   - component: {fileID: 3727002966984934495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_Dam1_long
   m_TagString: Untagged
   m_Icon: {fileID: 0}
