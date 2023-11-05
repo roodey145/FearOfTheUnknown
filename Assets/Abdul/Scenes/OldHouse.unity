@@ -507,6 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTag: Player
   _eventName: Animate
+  _passiveEventTriggerDelay: 0.75
   _repeatable: 0
   _hasBeenExecuted: 0
 --- !u!54 &41667044
@@ -15937,6 +15938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTag: Player
   _eventName: Stage_2
+  _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
   _ancher: {fileID: 1033592062}
@@ -16711,7 +16713,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -18581,6 +18583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTag: Player
   _eventName: Animate
+  _passiveEventTriggerDelay: 0.75
   _repeatable: 0
   _hasBeenExecuted: 0
 --- !u!54 &1444051219
@@ -20710,6 +20713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTag: Player
   _eventName: Animate
+  _passiveEventTriggerDelay: 0.75
   _repeatable: 0
   _hasBeenExecuted: 0
 --- !u!54 &1581088446

@@ -9,6 +9,7 @@ public abstract class Event : MonoBehaviour
 {
     [SerializeField] protected string _targetTag = "Player";
     [SerializeField] protected string _eventName = "Stage_2";
+    [SerializeField] protected float _passiveEventTriggerDelay = 0;
     [SerializeField] protected bool _repeatable = false;
     [SerializeField] private bool _hasBeenExecuted = false;
     private GameObject _currentTarget;
@@ -22,12 +23,21 @@ public abstract class Event : MonoBehaviour
             if(!_hasBeenExecuted || _repeatable)
             {
                 _currentTarget = other.gameObject;
-                _TriggerEvent();
-                _Action(_eventName);
+
+                StartCoroutine(_DelayedEventTrigger(_passiveEventTriggerDelay));
+                
                 _hasBeenExecuted = true;
             }
             
         }
+    }
+
+    private IEnumerator _DelayedEventTrigger(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        _TriggerEvent();
+        _Action(_eventName);
     }
 
     protected GameObject _GetTarget()
