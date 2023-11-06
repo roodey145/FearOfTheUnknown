@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5352742905549686718}
   - component: {fileID: 4401629178383318841}
   - component: {fileID: 7258090146327953924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_Doorway_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,9 +136,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6511851839710952928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OldHouse_Wall_Doorway
-  m_TagString: Untagged
+  m_TagString: Geometry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

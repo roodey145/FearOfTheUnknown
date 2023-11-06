@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6165243333793928768}
   - component: {fileID: 7923880609544550352}
   - component: {fileID: 2441822176841484799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8386234173076510619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OldHouse_Wall_Window
-  m_TagString: Untagged
+  m_TagString: Geometry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
