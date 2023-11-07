@@ -5,8 +5,11 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(AudioSource))]
 public class GuideCharacterController : MonoBehaviour
 {
+    public static GuideCharacterController instance { get; private set; }
+
     [Header("Move Setting")]
     [SerializeField] private Transform[] _destinations;
     [SerializeField] private Vector3 _destination;
@@ -15,16 +18,20 @@ public class GuideCharacterController : MonoBehaviour
     [SerializeField] private int _moveStageId = 0;
 
     [Header("Cinematic Settings")]
-    [SerializeField] private string[] _animationsTriggerName;
+    //[SerializeField] private string[] _animationsTriggerName;
+    [SerializeField] private AnimationClipInfo[] _animationsInfo;
     [SerializeField] private string _animateEvent = "Animate";
     [SerializeField] private int _animateStageId = 0;
 
 
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _audioSource;
     private NavMeshAgent _agent;
 
     private void Awake()
     {
+        instance = this;
+
         EventListener moveEvent = new EventListener(
             (string eventName) => eventName == _moveEvent, 
             _MoveToNextDestination);
@@ -43,6 +50,7 @@ public class GuideCharacterController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+        _audioSource = GetComponent<AudioSource>();
 
         // Trigger the first move event
         StartCoroutine(_TriggerEvent(_moveEvent, 0f));
@@ -79,20 +87,22 @@ public class GuideCharacterController : MonoBehaviour
 
     private void _TriggerNextAnimation()
     {
-        if (_animationsTriggerName.Length <= _animateStageId) return;
+        if (_animationsInfo.Length <= _animateStageId) return;
 
-        _animator.SetTrigger(_animationsTriggerName[_animateStageId]);
+        _animationsInfo[_animateStageId].Play(_animator, _audioSource, _MoveToNextDestination);
 
-        // Get the duration of the triggered animation
-        AnimationClip[] animations = _animator.runtimeAnimatorController.animationClips;
-        foreach (AnimationClip anim in animations)
-        {
-            if (anim.name.ToLower() == _animationsTriggerName[_animateStageId].ToLower().Replace("trigger", ""))
-            {
-                StartCoroutine(_TriggerEvent(_moveEvent, anim.length)); // Trigger the move to next destination
-            }
-            else print("Animation Name: " + anim.name);
-        }
+        //_animator.SetTrigger(_animationsInfo[_animateStageId].animationTriggerName);
+
+        //// Get the duration of the triggered animation
+        //AnimationClip[] animations = _animator.runtimeAnimatorController.animationClips;
+        //foreach (AnimationClip anim in animations)
+        //{
+        //    if (anim.name.ToLower() == _animationsInfo[_animateStageId].animationTriggerName.ToLower().Replace("trigger", ""))
+        //    {
+        //        StartCoroutine(_TriggerEvent(_moveEvent, anim.length)); // Trigger the move to next destination
+        //    }
+        //    else print("Animation Name: " + anim.name);
+        //}
 
         _animateStageId++;
     }
