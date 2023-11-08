@@ -13095,7 +13095,7 @@ PrefabInstance:
     - target: {fileID: 5873630885029327012, guid: 7870ecfc371aa5a4a8ff44507a2fc010,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.009
+      value: -1.002
       objectReference: {fileID: 0}
     - target: {fileID: 5873630885029327012, guid: 7870ecfc371aa5a4a8ff44507a2fc010,
         type: 3}
@@ -18795,7 +18795,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destinations:
   - {fileID: 1704783182}
-  - {fileID: 961285193}
   - {fileID: 711809944}
   - {fileID: 1724902612}
   - {fileID: 742226391}
@@ -18805,23 +18804,10 @@ MonoBehaviour:
   _moveStageId: 0
   _animationsInfo:
   - animationTriggerName: LookAroundTrigger
-    animationDelayInSeconds: 0.75
+    animationDelayInSeconds: 0.25
     audioClip: {fileID: 8300000, guid: 7d000ccb134ada748bc95ba8781b97f8, type: 3}
     audioExecutionPhase: 2
-    audioDelayInSeconds: 1
-    animationsClip: []
-    animationsClipPointer: 0
-    animate: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: WalkTrigger
-    animationDelayInSeconds: 0.75
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
+    audioDelayInSeconds: 0.5
     animationsClip: []
     animationsClipPointer: 0
     animate: {fileID: 0}
@@ -18839,6 +18825,32 @@ MonoBehaviour:
     animationsClipPointer: 0
     animate: {fileID: 557619025}
     animateableExecutionPhase: 2
+    animateableDelayInSeconds: 0
+    callWhenDone:
+      m_PersistentCalls:
+        m_Calls: []
+  - animationTriggerName: GirlIdleTrigger
+    animationDelayInSeconds: 0
+    audioClip: {fileID: 0}
+    audioExecutionPhase: 2
+    audioDelayInSeconds: 0
+    animationsClip: []
+    animationsClipPointer: 0
+    animate: {fileID: 557619025}
+    animateableExecutionPhase: 2
+    animateableDelayInSeconds: 0
+    callWhenDone:
+      m_PersistentCalls:
+        m_Calls: []
+  - animationTriggerName: GirlIdleTrigger
+    animationDelayInSeconds: 0
+    audioClip: {fileID: 0}
+    audioExecutionPhase: 2
+    audioDelayInSeconds: 0
+    animationsClip: []
+    animationsClipPointer: 0
+    animate: {fileID: 0}
+    animateableExecutionPhase: 0
     animateableDelayInSeconds: 0
     callWhenDone:
       m_PersistentCalls:
@@ -24347,7 +24359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: Animate
+  _eventName: AnimateStage2
   _passiveEventTriggerDelay: 0.75
   _repeatable: 0
   _hasBeenExecuted: 0
