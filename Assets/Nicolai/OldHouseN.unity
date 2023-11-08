@@ -18816,7 +18816,7 @@ MonoBehaviour:
     callWhenDone:
       m_PersistentCalls:
         m_Calls: []
-  - animationTriggerName: WalkTrigger
+  - animationTriggerName: GirlRunTrigger
     animationDelayInSeconds: 0.75
     audioClip: {fileID: 0}
     audioExecutionPhase: 2
