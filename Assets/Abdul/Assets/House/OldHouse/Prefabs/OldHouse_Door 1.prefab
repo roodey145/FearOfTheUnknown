@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5873630885029327012}
+  - component: {fileID: 6401115910771228141}
+  - component: {fileID: 1774693045295178976}
   m_Layer: 6
   m_Name: OldHouse_Door 1
   m_TagString: Geometry
@@ -33,6 +35,48 @@ Transform:
   - {fileID: 7295762742282604632}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6401115910771228141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410527214122271878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.07974291, y: 0.079540014, z: 0.08486293}
+  m_Center: {x: 0.8273045, y: 0.9598135, z: -0.074155726}
+--- !u!65 &1774693045295178976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410527214122271878}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0862689, y: 0.07267618, z: 0.0756893}
+  m_Center: {x: 0.82569396, y: 0.96271324, z: 0.0757348}
 --- !u!1 &6952046813964128534
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +88,7 @@ GameObject:
   - component: {fileID: 7295762742282604632}
   - component: {fileID: 1011887005713509992}
   - component: {fileID: 4885208580770000227}
+  - component: {fileID: 6716743449465701426}
   m_Layer: 6
   m_Name: Door.001 (1)
   m_TagString: Untagged
@@ -116,6 +161,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6716743449465701426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952046813964128534}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.009512124, y: 0.00079417083, z: 0.022118973}
+  m_Center: {x: 0.0045291423, y: -0.000025867857, z: 0.010871978}
 --- !u!1 &8082994424908803767
 GameObject:
   m_ObjectHideFlags: 0
