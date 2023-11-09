@@ -17,7 +17,7 @@ public class AnimationClipInfo
     public int animationsClipPointer = 0;
 
 
-    public Animateable animate;
+    public Animateable animateable;
     public ExecutionPhaseEnum animateableExecutionPhase;
     public float animateableDelayInSeconds = 0f;
 
@@ -57,10 +57,10 @@ public class AnimationClipInfo
     {
         // Get the external animateable animation delay 
         float externalAnimationDelay = 0f;
-        if (animate != null && animateableExecutionPhase == ExecutionPhaseEnum.PreExecution)
+        if (animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PreExecution)
         {
-            externalAnimationDelay = animate.GetAnimationDuration();
-            animate.Animate(animateableDelayInSeconds);
+            externalAnimationDelay = animateable.GetAnimationDuration();
+            animateable.Animate(animateableDelayInSeconds);
         }
 
 
@@ -94,10 +94,10 @@ public class AnimationClipInfo
 
 
         // Animate the animateable if it should be animated at the same time with the other animations
-        if (animateableExecutionPhase == ExecutionPhaseEnum.SimultaneouslyExecution)
+        if (animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.SimultaneouslyExecution)
         {
             // Animate an external source
-            animate.Animate(animateableDelayInSeconds);
+            animateable.Animate(animateableDelayInSeconds);
         }
     }
 
@@ -116,10 +116,10 @@ public class AnimationClipInfo
             MonoBehaviour.print("Stopped");
             _stopped = true;
             _isPlaying = false;
-            if(animate != null && animateableExecutionPhase == ExecutionPhaseEnum.PostExecution)
+            if(animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PostExecution)
             {
                 // Animate an external source
-                animate.Animate(animateableDelayInSeconds, _callbackWhenDone);
+                animateable.Animate(animateableDelayInSeconds, _callbackWhenDone);
             }
             else if(_callbackWhenDone != null) _callbackWhenDone();
         }
