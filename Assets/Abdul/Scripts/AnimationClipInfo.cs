@@ -33,6 +33,10 @@ public class AnimationClipInfo
 
     private Action _callbackWhenDone;
 
+
+    private Animator _animator;
+    private AudioSource _audioSource;
+
     public AnimationClipInfo GetNextAnimationClip()
     {
         if (animationsClip == null) return null;
@@ -63,10 +67,11 @@ public class AnimationClipInfo
             animateable.Animate(animateableDelayInSeconds);
         }
 
-
+        _animator = animator;
+        _audioSource = audioSource;
         _callbackWhenDone = callbackWhenDone;
         _isPlaying = true;
-       float animationDelay = animationDelayInSeconds + externalAnimationDelay;
+        float animationDelay = animationDelayInSeconds + externalAnimationDelay;
         if(audioClip != null)
         {
             float delayAudioInSeconds = audioDelayInSeconds + externalAnimationDelay;
@@ -83,6 +88,8 @@ public class AnimationClipInfo
                 //    break;
 
                 case ExecutionPhaseEnum.PostExecution:
+                    if (animationTriggerName == "") break;
+
                     delayAudioInSeconds += ExtendedAnimator.GetAnimationDuration(animator, animationTriggerName.Replace("Trigger", ""));
                     break;
             }
@@ -90,7 +97,8 @@ public class AnimationClipInfo
             AudioSourceUtility.PlayDelayedAudio(delayAudioInSeconds, audioSource, audioClip, () => Stop(true));
         }
 
-        ExtendedAnimator.PlayDelayedAnimation(animator, animationTriggerName, animationDelay, () => Stop(false));
+        if(animationTriggerName != "")
+            ExtendedAnimator.PlayDelayedAnimation(animator, animationTriggerName, animationDelay, () => Stop(false));
 
 
         // Animate the animateable if it should be animated at the same time with the other animations
@@ -100,6 +108,7 @@ public class AnimationClipInfo
             animateable.Animate(animateableDelayInSeconds);
         }
     }
+
 
     public bool isStopped()
     {
@@ -111,9 +120,17 @@ public class AnimationClipInfo
         if(audio) _audioStopped = true;
         else _animationStopped = true;
 
-        if(_animationStopped && _audioStopped || (_animationStopped && audioClip == null))
+        if(_animationStopped && _audioStopped || (_animationStopped && audioClip == null)
+            || (_audioStopped && animationTriggerName == ""))
         {
-            MonoBehaviour.print("Stopped");
+            
+            // Check if there are other animations to play.
+            if(animationsClipPointer < animationsClip.Length)
+            {
+                animationsClip[animationsClipPointer++].Play(_animator, _audioSource, () => Stop(audio));
+                return;
+            }
+
             _stopped = true;
             _isPlaying = false;
             if(animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PostExecution)
