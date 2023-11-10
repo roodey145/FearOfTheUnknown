@@ -21,6 +21,7 @@ public class AnimateListener : MonoBehaviour
 
     private Animator _animator;
     private AudioSource _audioSource;
+    private bool _isPlaying = false;
 
 
     private void Awake()
@@ -39,7 +40,7 @@ public class AnimateListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_repeat && _repeatStopCondition != null)
+        if(_isPlaying && _repeat && _repeatStopCondition != null)
         {
             if(_repeatStopCondition.Check())
             {
@@ -49,6 +50,8 @@ public class AnimateListener : MonoBehaviour
                 // Stops the condition to reduce the computation overhead
                 _repeatStopCondition.enabled = false;
                 Component.Destroy(_repeatStopCondition);
+                _isPlaying = false;
+                EventsController.RegisterEvent("Animate");
             }
         }
     }
@@ -59,7 +62,7 @@ public class AnimateListener : MonoBehaviour
         print("Executing");
         _animator.enabled = true;
         _audioSource.enabled = true;
-
+        _isPlaying = true;
         _Play();
     }
 
