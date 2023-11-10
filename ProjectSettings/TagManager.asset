@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Geometry
   - Key
+  - GuideCharacter
   layers:
   - Default
   - TransparentFX

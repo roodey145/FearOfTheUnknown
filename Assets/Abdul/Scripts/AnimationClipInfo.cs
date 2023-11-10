@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,8 +13,16 @@ public class AnimationClipInfo
     public AudioClip audioClip = null; // Empty means no audio
     public ExecutionPhaseEnum audioExecutionPhase = ExecutionPhaseEnum.SimultaneouslyExecution;
     public float audioDelayInSeconds = 0f; 
-    public AnimationClip[] animationsClip; // To allow multiple animations clips to be executed sequentially
+    public AnimationClipInfo[] animationsClip; // To allow multiple animations clips to be executed sequentially
     public int animationsClipPointer = 0;
+
+
+    public Animateable animateable;
+    public ExecutionPhaseEnum animateableExecutionPhase;
+    public float animateableDelayInSeconds = 0f;
+
+    //public Action callbackWhenDone = null;
+    public StringUnityEvent callWhenDone;
 
     private bool _isPlaying = false;
     private bool _stopped = false;
@@ -24,7 +33,13 @@ public class AnimationClipInfo
 
     private Action _callbackWhenDone;
 
-    public AnimationClip GetNextAnimationClip()
+
+
+    private Animator _animator;
+    private AudioSource _audioSource;
+
+
+    public AnimationClipInfo GetNextAnimationClip()
     {
         if (animationsClip == null) return null;
 
@@ -34,7 +49,7 @@ public class AnimationClipInfo
         return animationsClip[++animationsClipPointer];
     }
 
-    public AnimationClip GetPreviousAnimationClip()
+    public AnimationClipInfo GetPreviousAnimationClip()
     {
         if (animationsClip == null) return null;
 
@@ -46,17 +61,26 @@ public class AnimationClipInfo
 
     public void Play(Animator animator, AudioSource audioSource, Action callbackWhenDone = null)
     {
+        // Get the external animateable animation delay 
+        float externalAnimationDelay = 0f;
+        if (animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PreExecution)
+        {
+            externalAnimationDelay = animateable.GetAnimationDuration();
+            animateable.Animate(animateableDelayInSeconds);
+        }
+
+
+        _animator = animator;
+        _audioSource = audioSource;
         _callbackWhenDone = callbackWhenDone;
         _isPlaying = true;
-       float animationDelay = animationDelayInSeconds;
+        float animationDelay = animationDelayInSeconds + externalAnimationDelay;
         if(audioClip != null)
         {
-            float audioClipDelayInSeconds = audioDelayInSeconds;
-            float delayAudioInSeconds = audioClipDelayInSeconds;
+            float delayAudioInSeconds = audioDelayInSeconds + externalAnimationDelay;
             switch (audioExecutionPhase)
             {
                 case ExecutionPhaseEnum.PreExecution:
-                    audioClipDelayInSeconds += audioClip.length;
                     animationDelay += audioClip.length + audioDelayInSeconds;
                     break;
 
@@ -67,6 +91,10 @@ public class AnimationClipInfo
                 //    break;
 
                 case ExecutionPhaseEnum.PostExecution:
+
+                    if (animationTriggerName == "") break;
+
+
                     delayAudioInSeconds += ExtendedAnimator.GetAnimationDuration(animator, animationTriggerName.Replace("Trigger", ""));
                     break;
             }
@@ -74,8 +102,20 @@ public class AnimationClipInfo
             AudioSourceUtility.PlayDelayedAudio(delayAudioInSeconds, audioSource, audioClip, () => Stop(true));
         }
 
-        ExtendedAnimator.PlayDelayedAnimation(animator, animationTriggerName, animationDelay, () => Stop(false));
+
+        if(animationTriggerName != "")
+            ExtendedAnimator.PlayDelayedAnimation(animator, animationTriggerName, animationDelay, () => Stop(false));
+
+
+
+        // Animate the animateable if it should be animated at the same time with the other animations
+        if (animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.SimultaneouslyExecution)
+        {
+            // Animate an external source
+            animateable.Animate(animateableDelayInSeconds);
+        }
     }
+
 
     public bool isStopped()
     {
@@ -87,12 +127,27 @@ public class AnimationClipInfo
         if(audio) _audioStopped = true;
         else _animationStopped = true;
 
-        if(_animationStopped && _audioStopped || (_animationStopped && audioClip == null))
+
+        if(_animationStopped && _audioStopped || (_animationStopped && audioClip == null)
+            || (_audioStopped && animationTriggerName == ""))
         {
-            MonoBehaviour.print("Stopped");
+            
+            // Check if there are other animations to play.
+            if(animationsClipPointer < animationsClip.Length)
+            {
+                animationsClip[animationsClipPointer++].Play(_animator, _audioSource, () => Stop(audio));
+                return;
+            }
+
+
             _stopped = true;
             _isPlaying = false;
-            if(_callbackWhenDone != null) _callbackWhenDone();
+            if(animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PostExecution)
+            {
+                // Animate an external source
+                animateable.Animate(animateableDelayInSeconds, _callbackWhenDone);
+            }
+            else if(_callbackWhenDone != null) _callbackWhenDone();
         }
     }
 }
