@@ -34,8 +34,10 @@ public class AnimationClipInfo
     private Action _callbackWhenDone;
 
 
+
     private Animator _animator;
     private AudioSource _audioSource;
+
 
     public AnimationClipInfo GetNextAnimationClip()
     {
@@ -67,6 +69,7 @@ public class AnimationClipInfo
             animateable.Animate(animateableDelayInSeconds);
         }
 
+
         _animator = animator;
         _audioSource = audioSource;
         _callbackWhenDone = callbackWhenDone;
@@ -88,7 +91,9 @@ public class AnimationClipInfo
                 //    break;
 
                 case ExecutionPhaseEnum.PostExecution:
+
                     if (animationTriggerName == "") break;
+
 
                     delayAudioInSeconds += ExtendedAnimator.GetAnimationDuration(animator, animationTriggerName.Replace("Trigger", ""));
                     break;
@@ -97,8 +102,10 @@ public class AnimationClipInfo
             AudioSourceUtility.PlayDelayedAudio(delayAudioInSeconds, audioSource, audioClip, () => Stop(true));
         }
 
+
         if(animationTriggerName != "")
             ExtendedAnimator.PlayDelayedAnimation(animator, animationTriggerName, animationDelay, () => Stop(false));
+
 
 
         // Animate the animateable if it should be animated at the same time with the other animations
@@ -120,6 +127,7 @@ public class AnimationClipInfo
         if(audio) _audioStopped = true;
         else _animationStopped = true;
 
+
         if(_animationStopped && _audioStopped || (_animationStopped && audioClip == null)
             || (_audioStopped && animationTriggerName == ""))
         {
@@ -130,6 +138,7 @@ public class AnimationClipInfo
                 animationsClip[animationsClipPointer++].Play(_animator, _audioSource, () => Stop(audio));
                 return;
             }
+
 
             _stopped = true;
             _isPlaying = false;

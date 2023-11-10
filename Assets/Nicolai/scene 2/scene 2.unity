@@ -2862,7 +2862,7 @@ Transform:
   m_GameObject: {fileID: 1300639399}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.9, y: 0.776, z: -0.619}
+  m_LocalPosition: {x: -1.102, y: 0.776, z: -0.619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1643585450}
-  clip: {fileID: 8300000, guid: 907ca9dcd5842664291447bccf92b4d9, type: 3}
+  clip: {fileID: 8300000, guid: 4d776d117b0b8a44688651065065fe15, type: 3}
   spotLight: {fileID: 1300639402}
   minBlinkIntervalOff: 0.1
   maxBlinkIntervalOff: 0.2
@@ -3408,15 +3408,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421567750}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.023, y: 0.221, z: 1.601}
+  m_LocalRotation: {x: 0, y: 0.0014224708, z: 0, w: 0.999999}
+  m_LocalPosition: {x: 0.022999989, y: 0.22099996, z: 1.601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1626607859}
   - {fileID: 1835340653}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.163, z: 0}
 --- !u!82 &1421567757
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3601,7 +3601,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3881,8 +3881,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 4d776d117b0b8a44688651065065fe15, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3927,7 +3927,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
