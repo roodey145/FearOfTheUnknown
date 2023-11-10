@@ -5,9 +5,14 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(AudioSource))]
 public class GuideCharacterController : MonoBehaviour
 {
+    public static GuideCharacterController instance { get; private set; }
+
     [Header("Move Setting")]
+    [SerializeField] private DestinationInfo[] _destinationsInfo;
+    [SerializeField] private int _destinationPointer = 0;
     [SerializeField] private Transform[] _destinations;
     [SerializeField] private Vector3 _destination;
     [SerializeField] private string _moveEvent = "Move";
@@ -15,16 +20,24 @@ public class GuideCharacterController : MonoBehaviour
     [SerializeField] private int _moveStageId = 0;
 
     [Header("Cinematic Settings")]
-    [SerializeField] private string[] _animationsTriggerName;
+    //[SerializeField] private string[] _animationsTriggerName;
+    [SerializeField] private AnimationClipInfo[] _animationsInfo;
     [SerializeField] private string _animateEvent = "Animate";
     [SerializeField] private int _animateStageId = 0;
 
 
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _audioSource;
     private NavMeshAgent _agent;
+    private float _agentInitialSpeed = 0;
+
+    private bool _matchRotation = false;
+    private Quaternion _rotation;
 
     private void Awake()
     {
+        instance = this;
+
         EventListener moveEvent = new EventListener(
             (string eventName) => eventName == _moveEvent, 
             _MoveToNextDestination);
@@ -43,6 +56,9 @@ public class GuideCharacterController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+        _audioSource = GetComponent<AudioSource>();
+
+        _agentInitialSpeed = _agent.speed;
 
         // Trigger the first move event
         StartCoroutine(_TriggerEvent(_moveEvent, 0f));
@@ -65,35 +81,33 @@ public class GuideCharacterController : MonoBehaviour
 
     private void _MoveToNextDestination()
     {
-        if (_destinations.Length <= _moveStageId) return;
+        print($"Destination Pointer {_destinationPointer} , Destination Length: {_destinationsInfo.Length}");
+        if (_destinationsInfo.Length <= _destinationPointer) return;
 
-        _destination = _destinations[_moveStageId].position;
+        _destination = _destinationsInfo[_destinationPointer].destination.position;
+
+        // Increase the agent speed if the current animation requires that
+        _agent.speed = _agentInitialSpeed + _destinationsInfo[_destinationPointer].speedIncrease;
 
         _agent.SetDestination(_destination);
 
         // Animate the character
-        _animator.SetTrigger(_moveAnimationTriggerName);
-
-        _moveStageId++;
+        _animator.SetTrigger(_destinationsInfo[_destinationPointer].movingAnimationTriggerName);
     }
 
     private void _TriggerNextAnimation()
     {
-        if (_animationsTriggerName.Length <= _animateStageId) return;
+        if (_destinationsInfo.Length <= _destinationPointer) return;
 
-        _animator.SetTrigger(_animationsTriggerName[_animateStageId]);
 
-        // Get the duration of the triggered animation
-        AnimationClip[] animations = _animator.runtimeAnimatorController.animationClips;
-        foreach (AnimationClip anim in animations)
+        // Check if we need to match the destination rotation
+        if(_destinationsInfo[_destinationPointer].matchDestinationRotation)
         {
-            if (anim.name.ToLower() == _animationsTriggerName[_animateStageId].ToLower().Replace("trigger", ""))
-            {
-                StartCoroutine(_TriggerEvent(_moveEvent, anim.length)); // Trigger the move to next destination
-            }
-            else print("Animation Name: " + anim.name);
+            transform.rotation = _destinationsInfo[_destinationPointer].destination.rotation;
         }
 
-        _animateStageId++;
+        _destinationsInfo[_destinationPointer].clip.Play(_animator, _audioSource, _MoveToNextDestination);
+
+        _destinationPointer++;
     }
 }
