@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Teleport : Event
 {
     [SerializeField] private Transform _ancher;
     [SerializeField] private bool _matchProportionToAncherCenter = true;
+    [SerializeField] private bool _hasAgentController;
 
     protected override void _Action(string activationEvent)
     {
@@ -21,12 +23,23 @@ public class Teleport : Event
             characterController.enabled = false;
         }
         
+        if(_hasAgentController)
+        {
+            _GetTarget().GetComponent<NavMeshAgent>().enabled = false;
+        }
+
+        print(_GetTarget().name);
+
         _GetTarget().transform.position = positionToMoveTo + extraProportionPosition;
         
         // Reactivate the character controller
         if(characterController != null )
         {
             characterController.enabled = true;
+        }
+        if (_hasAgentController)
+        {
+            _GetTarget().GetComponent<NavMeshAgent>().enabled = true;
         }
         print("New Position: " + _GetTarget().transform.position);
     }

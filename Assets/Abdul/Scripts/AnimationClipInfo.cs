@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [Serializable]
 public class AnimationClipInfo
@@ -22,7 +23,7 @@ public class AnimationClipInfo
     public float animateableDelayInSeconds = 0f;
 
     //public Action callbackWhenDone = null;
-    public StringUnityEvent callWhenDone;
+    public UnityEvent callWhenDone;
 
     private bool _isPlaying = false;
     private bool _stopped = false;
@@ -145,9 +146,17 @@ public class AnimationClipInfo
             if(animateable != null && animateableExecutionPhase == ExecutionPhaseEnum.PostExecution)
             {
                 // Animate an external source
-                animateable.Animate(animateableDelayInSeconds, _callbackWhenDone);
+                animateable.Animate(animateableDelayInSeconds, _ExecutionEnd);
             }
-            else if(_callbackWhenDone != null) _callbackWhenDone();
+            else if(_callbackWhenDone != null) _ExecutionEnd();
         }
+    }
+
+
+    private void _ExecutionEnd()
+    {
+        if(callWhenDone != null) callWhenDone.Invoke();
+
+        if(_callbackWhenDone != null) _callbackWhenDone();
     }
 }
