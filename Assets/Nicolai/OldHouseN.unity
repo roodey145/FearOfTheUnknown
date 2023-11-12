@@ -19522,6 +19522,44 @@ MonoBehaviour:
           m_Calls: []
     movingAnimationTriggerName: GirlRunTrigger
     speedIncrease: 1.5
+  - name: Wait in the corridor
+    destination: {fileID: 0}
+    matchDestinationRotation: 1
+    clip:
+      animationTriggerName: GirlIdleTrigger
+      animationDelayInSeconds: 0
+      audioClip: {fileID: 8300000, guid: c88825a62240baa45a071b8b09642050, type: 3}
+      audioExecutionPhase: 2
+      audioDelayInSeconds: 0
+      animationsClip: []
+      animationsClipPointer: 0
+      animateable: {fileID: 0}
+      animateableExecutionPhase: 2
+      animateableDelayInSeconds: 0
+      callWhenDone:
+        m_PersistentCalls:
+          m_Calls: []
+    movingAnimationTriggerName: GirlIdleTrigger
+    speedIncrease: 1.5
+  - name: Move Towards The Last Door
+    destination: {fileID: 1670877814}
+    matchDestinationRotation: 1
+    clip:
+      animationTriggerName: GirlIdleTrigger
+      animationDelayInSeconds: 0
+      audioClip: {fileID: 8300000, guid: c88825a62240baa45a071b8b09642050, type: 3}
+      audioExecutionPhase: 2
+      audioDelayInSeconds: 0
+      animationsClip: []
+      animationsClipPointer: 0
+      animateable: {fileID: 0}
+      animateableExecutionPhase: 2
+      animateableDelayInSeconds: 0
+      callWhenDone:
+        m_PersistentCalls:
+          m_Calls: []
+    movingAnimationTriggerName: GirlRunTrigger
+    speedIncrease: 1.5
   _destinationPointer: 0
   _destinations:
   - {fileID: 1704783182}
@@ -27372,7 +27410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: GuideCharacter
-  _eventName: Stage_2
+  _eventName: Move
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -34581,6 +34619,7 @@ Transform:
   - {fileID: 1724902612}
   - {fileID: 742226391}
   - {fileID: 1823916850}
+  - {fileID: 1670877814}
   m_Father: {fileID: 1848726589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1265493233
@@ -46950,6 +46989,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 628698728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1670877813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670877814}
+  - component: {fileID: 1670877818}
+  - component: {fileID: 1670877817}
+  - component: {fileID: 1670877816}
+  - component: {fileID: 1670877815}
+  m_Layer: 2
+  m_Name: LastDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670877814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670877813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 49.397, y: 0.5, z: -0.236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262023476}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1670877815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670877813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: GuideCharacter
+  _eventName: Animate
+  _passiveEventTriggerDelay: 0.25
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &1670877816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670877813}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &1670877817
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670877813}
+  m_Mesh: {fileID: 0}
+--- !u!65 &1670877818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670877813}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1671036032
 GameObject:
   m_ObjectHideFlags: 0

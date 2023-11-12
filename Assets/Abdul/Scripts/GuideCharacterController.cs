@@ -113,7 +113,8 @@ public class GuideCharacterController : MonoBehaviour
         if (_destinationsInfo.Length <= _destinationPointer) return;
 
         // Check if we need to match the destination rotation
-        if(_destinationsInfo[_destinationPointer].matchDestinationRotation)
+        if(_destinationsInfo[_destinationPointer].matchDestinationRotation 
+            && _destinationsInfo[_destinationPointer].destination != null)
         {
             transform.rotation = _destinationsInfo[_destinationPointer].destination.rotation;
         }
