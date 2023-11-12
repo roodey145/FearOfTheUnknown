@@ -36,7 +36,7 @@ public class LightShutDownListener : MonoBehaviour
 
         EventListener eventListener = new EventListener((string eventName) => eventName == _eventName, ShutTheLightDown);
         EventsController.RegisterListener(eventListener);
-        EventsController.RegisterEvent(_eventName); // TODO: Delete Later
+        //EventsController.RegisterEvent(_eventName); // TODO: Delete Later
     }
 
     // Update is called once per frame

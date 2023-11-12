@@ -792,6 +792,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &34064609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1013,6 +1014,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &36848138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3697,7 +3699,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 486738704}
+    m_TransformParent: {fileID: 1503639974}
     m_Modifications:
     - target: {fileID: 1481667935582755483, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -3742,7 +3744,7 @@ PrefabInstance:
     - target: {fileID: 4336149970313933713, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5609749914652953147, guid: cf75f6449285f3e47ae85357a0cdb4d7,
         type: 3}
@@ -6448,6 +6450,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &204046601
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,6 +6588,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &204047997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7267,6 +7271,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &227634015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,6 +8700,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &291646144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9105,6 +9111,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!4 &314981893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2670464557007460394, guid: 0c2c27be9a678e94ea0883f5dbb050f5,
@@ -10027,6 +10034,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!64 &375348663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10314,6 +10322,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &398321738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10725,6 +10734,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &402153215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10856,7 +10866,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 410527214122271878, guid: 7870ecfc371aa5a4a8ff44507a2fc010,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2022554253}
+    - targetCorrespondingSourceObject: {fileID: 410527214122271878, guid: 7870ecfc371aa5a4a8ff44507a2fc010,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2022554252}
   m_SourcePrefab: {fileID: 100100000, guid: 7870ecfc371aa5a4a8ff44507a2fc010, type: 3}
 --- !u!4 &402153216 stripped
 Transform:
@@ -11332,6 +11350,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &446903535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12248,6 +12267,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &473727017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12474,6 +12494,108 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 1.75}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &485695238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485695239}
+  - component: {fileID: 485695242}
+  - component: {fileID: 485695241}
+  - component: {fileID: 485695240}
+  m_Layer: 2
+  m_Name: Stage2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485695239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485695238}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.066, y: 0, z: 7.951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 972331172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485695240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485695238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49dab0a24bbdca7419ffc0b8efbed41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: Stage_2
+  _passiveEventTriggerDelay: 0
+  _repeatable: 0
+  _hasBeenExecuted: 0
+  _ancher: {fileID: 481419363}
+  _matchProportionToAncherCenter: 1
+  _hasAgentController: 0
+--- !u!54 &485695241
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485695238}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &485695242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485695238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 1.75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &486738703
 GameObject:
   m_ObjectHideFlags: 0
@@ -12602,7 +12724,6 @@ Transform:
   - {fileID: 1847220413}
   - {fileID: 2052028927}
   - {fileID: 1945405025}
-  - {fileID: 102243758}
   - {fileID: 1852469412}
   m_Father: {fileID: 316266043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16297,6 +16418,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &648857188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16797,6 +16919,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &663367283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19487,6 +19610,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 683490733}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683490735}
   m_SourcePrefab: {fileID: 100100000, guid: d7fad2304dfbc2b4e96938a509cb92fc, type: 3}
 --- !u!1 &683490725 stripped
 GameObject:
@@ -19695,10 +19822,23 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: c88825a62240baa45a071b8b09642050, type: 3}
+      audioClip: {fileID: 8300000, guid: 50f6b336440a3bf41a7cebc54d6be773, type: 3}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
-      animationsClip: []
+      animationsClip:
+      - animationTriggerName: 
+        animationDelayInSeconds: 0
+        audioClip: {fileID: 8300000, guid: af837a7e5afba9e439a26f6256b0ce57, type: 3}
+        audioExecutionPhase: 0
+        audioDelayInSeconds: 0
+        animationsClip: []
+        animationsClipPointer: 0
+        animateable: {fileID: 0}
+        animateableExecutionPhase: 0
+        animateableDelayInSeconds: 0
+        callWhenDone:
+          m_PersistentCalls:
+            m_Calls: []
       animationsClipPointer: 0
       animateable: {fileID: 0}
       animateableExecutionPhase: 2
@@ -19922,6 +20062,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &683490735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683490725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: GirlScream
+  _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
+  _postTriggerEventName: AudioEnded
 --- !u!1001 &690464231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20379,6 +20534,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 729040241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733024218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733024219}
+  - component: {fileID: 733024223}
+  - component: {fileID: 733024222}
+  - component: {fileID: 733024221}
+  - component: {fileID: 733024220}
+  m_Layer: 2
+  m_Name: StartStage2 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733024219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 42.119, y: 0.5, z: -0.156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 972331172}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &733024220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: DoorCrack
+  _passiveEventTriggerDelay: 5
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &733024221
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &733024222
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Mesh: {fileID: 0}
+--- !u!65 &733024223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &742226390
 GameObject:
   m_ObjectHideFlags: 0
@@ -21492,6 +21755,7 @@ MonoBehaviour:
   _randomizePercentage: 0.1
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!64 &785924848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21819,6 +22083,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &799815910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22994,6 +23259,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!64 &875536361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23407,6 +23673,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &898618410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23831,6 +24098,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &911081535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26028,6 +26296,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &972331171
 GameObject:
   m_ObjectHideFlags: 0
@@ -26057,10 +26326,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 485695239}
   - {fileID: 1671036033}
   - {fileID: 48446388}
   - {fileID: 1940714222}
   - {fileID: 2044257762}
+  - {fileID: 733024219}
   m_Father: {fileID: 1848726589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &973253026
@@ -26445,6 +26716,7 @@ GameObject:
   - component: {fileID: 981734119}
   - component: {fileID: 981734121}
   - component: {fileID: 981734120}
+  - component: {fileID: 981734122}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -26552,6 +26824,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &981734122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981734118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.1
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &984033270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30865,6 +31156,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1138655465
 GameObject:
   m_ObjectHideFlags: 0
@@ -40705,6 +40997,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!114 &1451259526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41332,6 +41625,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1462476170
 GameObject:
   m_ObjectHideFlags: 0
@@ -42703,7 +42997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1503639974
 Transform:
   m_ObjectHideFlags: 0
@@ -42717,6 +43011,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 102243758}
   - {fileID: 473727018}
   - {fileID: 1668979365}
   - {fileID: 1540612468}
@@ -48751,6 +49046,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1695439014
 GameObject:
   m_ObjectHideFlags: 0
@@ -50566,6 +50862,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1744552548
 GameObject:
   m_ObjectHideFlags: 0
@@ -53239,7 +53536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848726589}
   m_Layer: 0
-  m_Name: Events (1)
+  m_Name: Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53595,6 +53892,7 @@ MonoBehaviour:
   _randomizePercentage: 0.1
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1865860190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
@@ -53752,6 +54050,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1 &1880449038
 GameObject:
   m_ObjectHideFlags: 0
@@ -53889,6 +54188,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &1881093906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57362,6 +57662,123 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019730565}
   m_Mesh: {fileID: 8989282747805165311, guid: 6c6b1aa6f1e950b49bf0690c7d8d2625, type: 3}
+--- !u!1 &2022554249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 410527214122271878, guid: 7870ecfc371aa5a4a8ff44507a2fc010,
+    type: 3}
+  m_PrefabInstance: {fileID: 402153215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2022554252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022554249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: DoorCrack
+  _clip: {fileID: 8300000, guid: 043b14aedfc80a14b8f6c1951a6c5386, type: 3}
+  _postTriggerEventName: GirlScream
+--- !u!82 &2022554253
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022554249}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2024800407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57795,6 +58212,7 @@ GameObject:
   - component: {fileID: 2044257764}
   - component: {fileID: 2044257763}
   - component: {fileID: 2044257767}
+  - component: {fileID: 2044257768}
   m_Layer: 2
   m_Name: StartStage2 (2)
   m_TagString: Untagged
@@ -57903,6 +58321,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
+--- !u!82 &2044257768
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2050652774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58618,6 +59133,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &2084476843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60235,6 +60751,7 @@ MonoBehaviour:
   _randomizePercentage: 0.5
   _durationInSeconds: 3
   _blinkingSpeedPerSecond: 5
+  _emissionColorName: _EmissionColor
 --- !u!1001 &2132849753
 PrefabInstance:
   m_ObjectHideFlags: 0
