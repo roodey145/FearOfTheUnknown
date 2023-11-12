@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 32493636}
   - component: {fileID: 32493638}
   - component: {fileID: 32493637}
+  - component: {fileID: 32493639}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -773,6 +774,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &32493639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32493635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &34064609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,6 +887,7 @@ GameObject:
   - component: {fileID: 35253531}
   - component: {fileID: 35253533}
   - component: {fileID: 35253532}
+  - component: {fileID: 35253534}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -975,6 +995,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &35253534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35253530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &36848138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6284,6 +6322,7 @@ GameObject:
   - component: {fileID: 203240629}
   - component: {fileID: 203240631}
   - component: {fileID: 203240630}
+  - component: {fileID: 203240632}
   m_Layer: 0
   m_Name: Spot Light (1)
   m_TagString: Untagged
@@ -6391,6 +6430,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &203240632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203240628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &204046601
 GameObject:
   m_ObjectHideFlags: 0
@@ -6402,6 +6459,7 @@ GameObject:
   - component: {fileID: 204046602}
   - component: {fileID: 204046604}
   - component: {fileID: 204046603}
+  - component: {fileID: 204046605}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -6509,6 +6567,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &204046605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204046601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &204047997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7065,6 +7141,7 @@ GameObject:
   - component: {fileID: 217368841}
   - component: {fileID: 217368843}
   - component: {fileID: 217368842}
+  - component: {fileID: 217368844}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -7172,6 +7249,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &217368844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217368840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &227634015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8474,6 +8569,7 @@ GameObject:
   - component: {fileID: 290223134}
   - component: {fileID: 290223136}
   - component: {fileID: 290223135}
+  - component: {fileID: 290223137}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -8581,6 +8677,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &290223137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290223133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &291646144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8865,6 +8979,7 @@ GameObject:
   - component: {fileID: 311673382}
   - component: {fileID: 311673384}
   - component: {fileID: 311673383}
+  - component: {fileID: 311673385}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -8972,6 +9087,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &311673385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311673381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!4 &314981893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2670464557007460394, guid: 0c2c27be9a678e94ea0883f5dbb050f5,
@@ -9768,6 +9901,7 @@ GameObject:
   - component: {fileID: 355562062}
   - component: {fileID: 355562064}
   - component: {fileID: 355562063}
+  - component: {fileID: 355562065}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -9875,6 +10009,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &355562065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355562061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!64 &375348663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10036,6 +10188,7 @@ GameObject:
   - component: {fileID: 390972250}
   - component: {fileID: 390972252}
   - component: {fileID: 390972251}
+  - component: {fileID: 390972253}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -10143,6 +10296,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &390972253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390972249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &398321738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10428,6 +10599,7 @@ GameObject:
   - component: {fileID: 400380847}
   - component: {fileID: 400380849}
   - component: {fileID: 400380848}
+  - component: {fileID: 400380850}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -10535,6 +10707,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &400380850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400380846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &402153215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11016,6 +11206,7 @@ GameObject:
   - component: {fileID: 444816359}
   - component: {fileID: 444816361}
   - component: {fileID: 444816360}
+  - component: {fileID: 444816362}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -11123,6 +11314,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &444816362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444816358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &446903535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11913,6 +12122,7 @@ GameObject:
   - component: {fileID: 469441133}
   - component: {fileID: 469441135}
   - component: {fileID: 469441134}
+  - component: {fileID: 469441136}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -12020,6 +12230,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &469441136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469441132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &473727017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15132,124 +15360,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6441727756411363552, guid: f8b68a58537c4214d93430186a753aa8, type: 3}
---- !u!1 &625226136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 625226137}
-  - component: {fileID: 625226139}
-  - component: {fileID: 625226138}
-  m_Layer: 0
-  m_Name: Spot Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &625226137
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625226136}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1101529187}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &625226138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625226136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
---- !u!108 &625226139
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625226136}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.5
-  m_Range: 8.98
-  m_SpotAngle: 179
-  m_InnerSpotAngle: 170.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &626521643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16061,6 +16171,7 @@ GameObject:
   - component: {fileID: 647073222}
   - component: {fileID: 647073224}
   - component: {fileID: 647073223}
+  - component: {fileID: 647073225}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -16168,6 +16279,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &647073225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647073221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &648857188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16542,6 +16671,7 @@ GameObject:
   - component: {fileID: 660085197}
   - component: {fileID: 660085199}
   - component: {fileID: 660085198}
+  - component: {fileID: 660085200}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -16649,6 +16779,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &660085200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660085196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &663367283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21218,6 +21366,7 @@ GameObject:
   - component: {fileID: 784223824}
   - component: {fileID: 784223826}
   - component: {fileID: 784223825}
+  - component: {fileID: 784223827}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -21325,6 +21474,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &784223827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784223823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.1
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!64 &785924848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21526,6 +21693,7 @@ GameObject:
   - component: {fileID: 793493092}
   - component: {fileID: 793493094}
   - component: {fileID: 793493093}
+  - component: {fileID: 793493095}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -21633,6 +21801,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &793493095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793493091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &799815910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22682,6 +22868,7 @@ GameObject:
   - component: {fileID: 873669682}
   - component: {fileID: 873669684}
   - component: {fileID: 873669683}
+  - component: {fileID: 873669685}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -22789,6 +22976,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &873669685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873669681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!64 &875536361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23076,6 +23281,7 @@ GameObject:
   - component: {fileID: 892504430}
   - component: {fileID: 892504432}
   - component: {fileID: 892504431}
+  - component: {fileID: 892504433}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -23183,6 +23389,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &892504433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892504429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &898618410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23481,6 +23705,7 @@ GameObject:
   - component: {fileID: 908246100}
   - component: {fileID: 908246102}
   - component: {fileID: 908246101}
+  - component: {fileID: 908246103}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -23539,7 +23764,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.18
-  m_Range: 1.66
+  m_Range: 5.24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -23588,6 +23813,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &908246103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908246099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &911081535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25659,6 +25902,7 @@ GameObject:
   - component: {fileID: 968746206}
   - component: {fileID: 968746208}
   - component: {fileID: 968746207}
+  - component: {fileID: 968746209}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -25766,6 +26010,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &968746209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968746205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &972331171
 GameObject:
   m_ObjectHideFlags: 0
@@ -25797,6 +26059,8 @@ Transform:
   m_Children:
   - {fileID: 1671036033}
   - {fileID: 48446388}
+  - {fileID: 1940714222}
+  - {fileID: 2044257762}
   m_Father: {fileID: 1848726589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &973253026
@@ -29469,7 +29733,6 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 625226137}
   - {fileID: 203240629}
   m_Father: {fileID: 1686049299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29573,7 +29836,7 @@ Transform:
   m_GameObject: {fileID: 1107722456}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5000002, y: -0.49999994, z: -0.49999967, w: 0.5000002}
-  m_LocalPosition: {x: -2.697, y: 2.178, z: 1.507}
+  m_LocalPosition: {x: -2.721, y: 2.178, z: 1.507}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30476,6 +30739,7 @@ GameObject:
   - component: {fileID: 1136344624}
   - component: {fileID: 1136344626}
   - component: {fileID: 1136344625}
+  - component: {fileID: 1136344627}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -30583,6 +30847,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1136344627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136344623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1138655465
 GameObject:
   m_ObjectHideFlags: 0
@@ -40297,6 +40579,7 @@ GameObject:
   - component: {fileID: 1450773914}
   - component: {fileID: 1450773916}
   - component: {fileID: 1450773915}
+  - component: {fileID: 1450773917}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -40404,6 +40687,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1450773917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450773913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!114 &1451259526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40905,6 +41206,7 @@ GameObject:
   - component: {fileID: 1459585048}
   - component: {fileID: 1459585050}
   - component: {fileID: 1459585049}
+  - component: {fileID: 1459585051}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -41012,6 +41314,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1459585051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459585047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1462476170
 GameObject:
   m_ObjectHideFlags: 0
@@ -48305,6 +48625,7 @@ GameObject:
   - component: {fileID: 1693868752}
   - component: {fileID: 1693868754}
   - component: {fileID: 1693868753}
+  - component: {fileID: 1693868755}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -48412,6 +48733,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1693868755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693868751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1695439014
 GameObject:
   m_ObjectHideFlags: 0
@@ -50101,6 +50440,7 @@ GameObject:
   - component: {fileID: 1737723062}
   - component: {fileID: 1737723064}
   - component: {fileID: 1737723063}
+  - component: {fileID: 1737723065}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -50208,6 +50548,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1737723065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737723061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1744552548
 GameObject:
   m_ObjectHideFlags: 0
@@ -52550,7 +52908,7 @@ Transform:
   m_GameObject: {fileID: 1838663143}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0.000000057601163, z: 0.000000057601163, w: 0.7071068}
-  m_LocalPosition: {x: -17.017, y: 3.033, z: 0.717}
+  m_LocalPosition: {x: 0.238, y: 3.033, z: -0.02}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53111,6 +53469,7 @@ GameObject:
   - component: {fileID: 1861195973}
   - component: {fileID: 1861195975}
   - component: {fileID: 1861195974}
+  - component: {fileID: 1861195976}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -53218,6 +53577,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1861195976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861195972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.1
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1865860190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2870646436490981376, guid: 6c14f4786465c8140ba7136e478a1571,
@@ -53249,6 +53626,7 @@ GameObject:
   - component: {fileID: 1867113661}
   - component: {fileID: 1867113663}
   - component: {fileID: 1867113662}
+  - component: {fileID: 1867113664}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -53356,6 +53734,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1867113664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867113660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1 &1880449038
 GameObject:
   m_ObjectHideFlags: 0
@@ -53367,6 +53763,7 @@ GameObject:
   - component: {fileID: 1880449039}
   - component: {fileID: 1880449041}
   - component: {fileID: 1880449040}
+  - component: {fileID: 1880449042}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -53474,6 +53871,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1880449042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880449038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &1881093906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54558,6 +54973,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1926246143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940714221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940714222}
+  - component: {fileID: 1940714226}
+  - component: {fileID: 1940714225}
+  - component: {fileID: 1940714224}
+  - component: {fileID: 1940714223}
+  m_Layer: 2
+  m_Name: StartStage2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940714222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940714221}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 42.119, y: 0.5, z: -0.156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 972331172}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1940714223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940714221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: ShutLightDown
+  _passiveEventTriggerDelay: 0
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &1940714224
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940714221}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &1940714225
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940714221}
+  m_Mesh: {fileID: 0}
+--- !u!65 &1940714226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940714221}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &1941347611
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57258,6 +57781,128 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee5abd94d6f59f64d99cc84dd2a973f4, type: 3}
+--- !u!1 &2044257761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2044257762}
+  - component: {fileID: 2044257766}
+  - component: {fileID: 2044257765}
+  - component: {fileID: 2044257764}
+  - component: {fileID: 2044257763}
+  - component: {fileID: 2044257767}
+  m_Layer: 2
+  m_Name: StartStage2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2044257762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 42.119, y: 0.5, z: -0.156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 972331172}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2044257763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: ShutLightDown
+  _passiveEventTriggerDelay: 0
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &2044257764
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &2044257765
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  m_Mesh: {fileID: 0}
+--- !u!65 &2044257766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2044257767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044257761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
 --- !u!1001 &2050652774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57847,6 +58492,7 @@ GameObject:
   - component: {fileID: 2083234887}
   - component: {fileID: 2083234889}
   - component: {fileID: 2083234888}
+  - component: {fileID: 2083234890}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -57954,6 +58600,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2083234890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083234886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &2084476843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59445,6 +60109,7 @@ GameObject:
   - component: {fileID: 2132190384}
   - component: {fileID: 2132190386}
   - component: {fileID: 2132190385}
+  - component: {fileID: 2132190387}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -59552,6 +60217,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2132190387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132190383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _shutDown: 0
+  _randomize: 1
+  _randomizePercentage: 0.5
+  _durationInSeconds: 3
+  _blinkingSpeedPerSecond: 5
 --- !u!1001 &2132849753
 PrefabInstance:
   m_ObjectHideFlags: 0
