@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Listener : MonoBehaviour
 {
-    [SerializeField] private string _eventName = "EventName";
+    [SerializeField] protected string _eventName = "EventName";
 
 
 
