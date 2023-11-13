@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,11 @@ using UnityEngine;
 public class LightShutDownListener : MonoBehaviour
 {
     private Light _light;
+    private bool _eventTriggered = false;
     [SerializeField] private string _eventName = "ShutLightDown";
+    [SerializeField] private bool _blink = false;
+    [SerializeField, Range(0f, 1f)] private float _maxLightIntensity = 1;
+    [SerializeField, Range(0f, 1f)] private float _minLightIntensity = 0.5f;
     [SerializeField] private bool _shutDown = false;
     [SerializeField] private bool _randomize = true;
     [SerializeField, Range(0f, 1f)] private float _randomizePercentage = 0.1f;
@@ -28,8 +33,8 @@ public class LightShutDownListener : MonoBehaviour
 
         if (_randomize)
         {
-            _durationInSeconds += Random.Range(0, _durationInSeconds * _randomizePercentage);
-            _blinkingSpeedPerSecond += Random.Range(0, _blinkingSpeedPerSecond * _randomizePercentage);
+            _durationInSeconds += UnityEngine.Random.Range(0, _durationInSeconds * _randomizePercentage);
+            _blinkingSpeedPerSecond += UnityEngine.Random.Range(0, _blinkingSpeedPerSecond * _randomizePercentage);
         }
 
         _durationCountDown = _durationInSeconds;
@@ -39,19 +44,29 @@ public class LightShutDownListener : MonoBehaviour
         //EventsController.RegisterEvent(_eventName); // TODO: Delete Later
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
+        if( !_eventTriggered && _blink )
+        {
+            if (_blinkingTimer >= 1f / _blinkingSpeedPerSecond)
+            {
+                _ChangeLightColor();
+                _blinkingTimer = 0;
+            }
+            _blinkingTimer += Time.deltaTime;
+        }
+
         if(_shutDown)
         {
-            float maxLightIntensity = (_durationCountDown / _durationInSeconds);
+            _maxLightIntensity = (_durationCountDown / _durationInSeconds);
 
             if(_blinkingTimer >= 1f/_blinkingSpeedPerSecond)
             {
-                float color = Random.Range(0, maxLightIntensity);
-                _light.color = new Color(color, color, color);
-                _material.SetColor(_emissionColorName, _light.color);
-                _renderer.material = _material;
+                _ChangeLightColor();
+                _blinkingTimer = 0;
             }
 
             _durationCountDown -= Time.deltaTime;
@@ -68,6 +83,16 @@ public class LightShutDownListener : MonoBehaviour
 
     public void ShutTheLightDown()
     {
+        _minLightIntensity = 0;
+        _eventTriggered = true;
         _shutDown = true;
+    }
+
+    private void _ChangeLightColor()
+    {
+        float color = UnityEngine.Random.Range(_minLightIntensity, _maxLightIntensity);
+        _light.color = new Color(color, color, color);
+        _material.SetColor(_emissionColorName, _light.color);
+        _renderer.material = _material;
     }
 }
