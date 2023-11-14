@@ -13,9 +13,10 @@ public class SceneEndedListener : Listener
     // Start is called before the first frame update
     void Start()
     {
-        _fadeOutTimer = _fadeOutSpeedInSeconds;
+        //_fadeOutTimer = _fadeOutSpeedInSeconds;
         if(_image == null)
             _image = GetComponentInChildren<Image>();
+        //EventsController.RegisterEvent(_eventName);
     }
 
     // Update is called once per frame
@@ -25,11 +26,12 @@ public class SceneEndedListener : Listener
         {
 
             _image.color = new Color(0, 0, 0, _fadeOutTimer / _fadeOutSpeedInSeconds);
-            _fadeOutTimer -= Time.deltaTime;
+            _fadeOutTimer += Time.deltaTime;
 
-            if(_fadeOutTimer <= 0)
+            if(_fadeOutTimer >= 1)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Open the next scene
+                print("Scene One");
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Open the next scene
             }
         }
     }

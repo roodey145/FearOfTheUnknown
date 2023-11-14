@@ -5,9 +5,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PlayerMovementListener : Listener
 {
+    [SerializeField] private float _movementSpeed = 1f;
     protected override void _Action()
     {
-        GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = 1;
+        GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = _movementSpeed;
     }
     // Start is called before the first frame update
     void Start()

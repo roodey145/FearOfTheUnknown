@@ -787,6 +787,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -1009,6 +1012,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -1956,6 +1962,9 @@ GameObject:
   - component: {fileID: 48446391}
   - component: {fileID: 48446390}
   - component: {fileID: 48446389}
+  - component: {fileID: 48446396}
+  - component: {fileID: 48446395}
+  - component: {fileID: 48446394}
   m_Layer: 2
   m_Name: StartStage2
   m_TagString: Untagged
@@ -2065,6 +2074,134 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &48446394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48446387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: SeemsOddlyFamilair
+  _passiveEventTriggerDelay: 0
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!114 &48446395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48446387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: SeemsOddlyFamilair
+  _clip: {fileID: 8300000, guid: 2174c479c82be024d829e6fe180347fb, type: 3}
+  _postTriggerEventName: AudioEnded
+--- !u!82 &48446396
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48446387}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &50266026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6445,6 +6582,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -6583,6 +6723,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -7266,6 +7409,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -8701,6 +8847,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -9118,6 +9267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -10041,6 +10193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -10329,6 +10484,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -10741,6 +10899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -11357,6 +11518,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -12274,6 +12438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -16479,6 +16646,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -16986,6 +17156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -19686,6 +19859,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 683490735}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683490737}
   m_SourcePrefab: {fileID: 100100000, guid: d7fad2304dfbc2b4e96938a509cb92fc, type: 3}
 --- !u!1 &683490725 stripped
 GameObject:
@@ -19732,6 +19909,7 @@ MonoBehaviour:
   - name: First Two Doors
     destination: {fileID: 1704783182}
     matchDestinationRotation: 0
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: LookAroundTrigger
       animationDelayInSeconds: 0.25
@@ -19758,12 +19936,25 @@ MonoBehaviour:
       animateableDelayInSeconds: 0
       callWhenDone:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 683490737}
+            m_TargetAssemblyTypeName: SimpleEventTrigger, Assembly-CSharp
+            m_MethodName: TriggerEvent
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     movingAnimationTriggerName: WalkTrigger
     speedIncrease: 0
   - name: Run toward big door and open it
     destination: {fileID: 711809944}
     matchDestinationRotation: 0
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19783,6 +19974,7 @@ MonoBehaviour:
   - name: Run toward second corridor and wait
     destination: {fileID: 1724902612}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19802,6 +19994,7 @@ MonoBehaviour:
   - name: Wait in the living room
     destination: {fileID: 0}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19821,6 +20014,7 @@ MonoBehaviour:
   - name: Run toward the last door in second corridor
     destination: {fileID: 742226391}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19840,6 +20034,7 @@ MonoBehaviour:
   - name: Run toward the teleport
     destination: {fileID: 906162461}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19859,6 +20054,7 @@ MonoBehaviour:
   - name: Wait in the corridor
     destination: {fileID: 0}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -19878,6 +20074,7 @@ MonoBehaviour:
   - name: Move Towards The Last Door
     destination: {fileID: 1670877814}
     matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
@@ -20136,6 +20333,19 @@ MonoBehaviour:
   _eventName: GirlScream
   _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
   _postTriggerEventName: PlayerGitHit
+--- !u!114 &683490737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683490725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428d97ee750c5824e9164ddf5215f5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: PlayerMovementOn
 --- !u!1001 &690464231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20606,6 +20816,9 @@ GameObject:
   - component: {fileID: 733024222}
   - component: {fileID: 733024221}
   - component: {fileID: 733024220}
+  - component: {fileID: 733024224}
+  - component: {fileID: 733024226}
+  - component: {fileID: 733024225}
   m_Layer: 2
   m_Name: StartStage2 (3)
   m_TagString: Untagged
@@ -20701,6 +20914,108 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &733024224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: PlayerMovementOff
+  _passiveEventTriggerDelay: 0
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!114 &733024225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &733024226
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733024218}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.015
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &742226390
 GameObject:
   m_ObjectHideFlags: 0
@@ -21701,7 +22016,7 @@ MonoBehaviour:
   _repeatable: 0
   _hasBeenExecuted: 0
   _ancher: {fileID: 481419363}
-  _matchProportionToAncherCenter: 1
+  _matchProportionToAncherCenter: 0
   _hasAgentController: 0
 --- !u!54 &777935433
 Rigidbody:
@@ -21883,6 +22198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.1
@@ -22211,6 +22529,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -23155,9 +23476,9 @@ Canvas:
   m_GameObject: {fileID: 865175640}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1332341849}
+  m_PlaneDistance: 0.04
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -23489,6 +23810,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -23903,6 +24227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -24328,6 +24655,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -26532,6 +26862,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -27079,6 +27412,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.1
@@ -31482,6 +31818,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -41443,6 +41782,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -42071,6 +42413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -42246,7 +42591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 0}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 0
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -42429,6 +42774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: PlayerMovementOn
+  _movementSpeed: 1
 --- !u!114 &1462476183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49566,6 +49912,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -51382,6 +51731,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -54412,6 +54764,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.1
@@ -54570,6 +54925,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -54708,6 +55066,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -57311,8 +57672,8 @@ MonoBehaviour:
   _eventName: SlamTheDoor
   _clipInfo:
   - animationTriggerName: SmashingDoorTrigger
-    animationDelayInSeconds: 1
-    audioClip: {fileID: 8300000, guid: d30190d9427ef104f8503fed78569ef0, type: 3}
+    animationDelayInSeconds: 1.5
+    audioClip: {fileID: 8300000, guid: fb72ef2da0840ab4ebb0bf7c95337b92, type: 3}
     audioExecutionPhase: 2
     audioDelayInSeconds: 0
     animationsClip: []
@@ -59555,6 +59916,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
@@ -61179,6 +61543,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown
+  _blink: 0
+  _maxLightIntensity: 1
+  _minLightIntensity: 0.5
   _shutDown: 0
   _randomize: 1
   _randomizePercentage: 0.5
