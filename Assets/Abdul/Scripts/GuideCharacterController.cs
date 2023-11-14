@@ -34,6 +34,8 @@ public class GuideCharacterController : MonoBehaviour
     private bool _matchRotation = false;
     private Quaternion _rotation;
 
+    private bool _moving = false;
+
     private void Awake()
     {
         instance = this;
@@ -81,10 +83,21 @@ public class GuideCharacterController : MonoBehaviour
 
     private void _MoveToNextDestination()
     {
-        print($"Destination Pointer {_destinationPointer} , Destination Length: {_destinationsInfo.Length}");
+        //print($"Destination Pointer {_destinationPointer} , Destination Length: {_destinationsInfo.Length}");
+
+        if (_moving) _destinationPointer++;
+
         if (_destinationsInfo.Length <= _destinationPointer) return;
 
-        _destination = _destinationsInfo[_destinationPointer].destination.position;
+        
+
+        _moving = true;
+
+        // Make sure that this animation has a destination
+        if (_destinationsInfo[_destinationPointer].destination != null)
+        {
+            _destination = _destinationsInfo[_destinationPointer].destination.position;
+        }
 
         // Increase the agent speed if the current animation requires that
         _agent.speed = _agentInitialSpeed + _destinationsInfo[_destinationPointer].speedIncrease;
@@ -99,15 +112,16 @@ public class GuideCharacterController : MonoBehaviour
     {
         if (_destinationsInfo.Length <= _destinationPointer) return;
 
-
         // Check if we need to match the destination rotation
-        if(_destinationsInfo[_destinationPointer].matchDestinationRotation)
+        if(_destinationsInfo[_destinationPointer].matchDestinationRotation 
+            && _destinationsInfo[_destinationPointer].destination != null)
         {
             transform.rotation = _destinationsInfo[_destinationPointer].destination.rotation;
         }
 
         _destinationsInfo[_destinationPointer].clip.Play(_animator, _audioSource, _MoveToNextDestination);
 
+        _moving = false;
         _destinationPointer++;
     }
 }

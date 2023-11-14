@@ -21,11 +21,12 @@ public class AnimateListener : MonoBehaviour
 
     private Animator _animator;
     private AudioSource _audioSource;
+    private bool _isPlaying = false;
 
 
     private void Awake()
     {
-        EventListener eventListener = new EventListener( (eventName) => eventName == _eventName, _Execute );
+        EventListener eventListener = new EventListener( ( eventName ) => eventName == _eventName, _Execute );
         EventsController.RegisterListener( eventListener );
     }
 
@@ -39,7 +40,7 @@ public class AnimateListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_repeat && _repeatStopCondition != null)
+        if(_isPlaying && _repeat && _repeatStopCondition != null)
         {
             if(_repeatStopCondition.Check())
             {
@@ -49,6 +50,8 @@ public class AnimateListener : MonoBehaviour
                 // Stops the condition to reduce the computation overhead
                 _repeatStopCondition.enabled = false;
                 Component.Destroy(_repeatStopCondition);
+                _isPlaying = false;
+                EventsController.RegisterEvent("Move");
             }
         }
     }
@@ -56,16 +59,18 @@ public class AnimateListener : MonoBehaviour
 
     private void _Execute(/*string eventName*/)
     {
-        print("Executing");
+        print($"Executing: {_eventName}");
         _animator.enabled = true;
         _audioSource.enabled = true;
-
+        _isPlaying = true;
         _Play();
     }
 
     private void _Play()
     {
-        if (_clipInfo == null || !_animator.enabled || !_audioSource.enabled) return;
+        //print("Pointer: " + _clipsPointer + ", Clips Length: " + _clipInfo.Length);
+        if (_clipInfo == null || _clipInfo.Length <= _clipsPointer
+            || !_animator.enabled || !_audioSource.enabled) return;
 
         if (_repeat && _clipsPointer >= _clipInfo.Length) _clipsPointer = 0;
 

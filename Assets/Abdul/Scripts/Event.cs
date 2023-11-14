@@ -16,10 +16,9 @@ public abstract class Event : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.name);
+        //print(other.name);
         if(other.CompareTag(_targetTag))
         {
-            print("Player Entered");
             if(!_hasBeenExecuted || _repeatable)
             {
                 _currentTarget = other.gameObject;

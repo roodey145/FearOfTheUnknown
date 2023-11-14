@@ -22,7 +22,7 @@ public class ExtendedAnimator
                 duration = anim.length;
                 break;
             }
-            else MonoBehaviour.print("Animation Name: " + anim.name);
+            //else MonoBehaviour.print("Animation Name: " + anim.name);
         }
 
         if(duration < 0f)

@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Nicolai/OldHouseN.unity
+    guid: 92d15f7f257715d4b9abaf6378357bef
+  - enabled: 1
+    path: Assets/Nicolai/scene 2/scene 2.unity
+    guid: 8e6a9e4fc2b2deb4a8900cb6799ed5e4
+  - enabled: 1
+    path: Assets/Nicolai/scene 3/scene 3.unity
+    guid: 5b433788c869fe64c9f24db4488c0836
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
