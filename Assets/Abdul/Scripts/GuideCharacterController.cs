@@ -35,6 +35,7 @@ public class GuideCharacterController : MonoBehaviour
     private Quaternion _rotation;
 
     private bool _moving = false;
+    private float _angularSpeed = 0;
 
     private void Awake()
     {
@@ -62,6 +63,8 @@ public class GuideCharacterController : MonoBehaviour
 
         _agentInitialSpeed = _agent.speed;
 
+        _angularSpeed = _agent.angularSpeed;
+
         // Trigger the first move event
         StartCoroutine(_TriggerEvent(_moveEvent, 0f));
     }
@@ -84,12 +87,12 @@ public class GuideCharacterController : MonoBehaviour
     private void _MoveToNextDestination()
     {
         //print($"Destination Pointer {_destinationPointer} , Destination Length: {_destinationsInfo.Length}");
-
+        print($"Moving Move: ({_moving})");
         if (_moving) _destinationPointer++;
 
         if (_destinationsInfo.Length <= _destinationPointer) return;
 
-        
+        _agent.angularSpeed = _angularSpeed;
 
         _moving = true;
 
@@ -97,12 +100,16 @@ public class GuideCharacterController : MonoBehaviour
         if (_destinationsInfo[_destinationPointer].destination != null)
         {
             _destination = _destinationsInfo[_destinationPointer].destination.position;
+            print($"Destination assigned");
         }
 
         // Increase the agent speed if the current animation requires that
         _agent.speed = _agentInitialSpeed + _destinationsInfo[_destinationPointer].speedIncrease;
 
         _agent.SetDestination(_destination);
+
+        print($"Moving");
+
 
         // Animate the character
         _animator.SetTrigger(_destinationsInfo[_destinationPointer].movingAnimationTriggerName);
@@ -112,16 +119,22 @@ public class GuideCharacterController : MonoBehaviour
     {
         if (_destinationsInfo.Length <= _destinationPointer) return;
 
+        _agent.angularSpeed = 0;
+
         // Check if we need to match the destination rotation
-        if(_destinationsInfo[_destinationPointer].matchDestinationRotation 
+        if (_destinationsInfo[_destinationPointer].matchDestinationRotation 
             && _destinationsInfo[_destinationPointer].destination != null)
         {
             transform.rotation = _destinationsInfo[_destinationPointer].destination.rotation;
         }
 
-        _destinationsInfo[_destinationPointer].clip.Play(_animator, _audioSource, _MoveToNextDestination);
+        _destinationsInfo[_destinationPointer].clip.Play(
+            _animator, 
+            _audioSource,
+            _destinationsInfo[_destinationPointer].moveToNextDestinationWhendone ? _MoveToNextDestination : null);
 
         _moving = false;
         _destinationPointer++;
+        print($"Moving Animation: ({_moving})");
     }
 }
