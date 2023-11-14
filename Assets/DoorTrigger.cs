@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
 public class DoorTrigger : MonoBehaviour
@@ -10,6 +11,7 @@ public class DoorTrigger : MonoBehaviour
     public AudioClip[] clip;
     public float timer = 0f;
     public Rigidbody paintingRB;
+    [SerializeField] private string _sceneEndedEventName = "SceneEnded";
 
     private bool startSequence;
     private bool audio0C = false;
@@ -58,12 +60,22 @@ public class DoorTrigger : MonoBehaviour
             startSequence = true;
         }
 
-        if(other.tag == "Key")
+        if(other.tag == "Key" && !_doorIsOpen)
         {
-            source[3].PlayOneShot(clip[3]);
+            
             Debug.Log("YOOO");
             //
             //fade to new scene
+            StartCoroutine(_OpenTheDoor());
         }
+    }
+
+    private bool _doorIsOpen = false;
+    private IEnumerator _OpenTheDoor()
+    {
+        _doorIsOpen = true;
+        source[3].PlayOneShot(clip[3]);
+        yield return new WaitForSeconds(clip[3].length);
+        EventsController.RegisterEvent(_sceneEndedEventName); // Will cause the scene ended listener to move to the next scene
     }
 }

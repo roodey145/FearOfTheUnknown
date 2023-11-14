@@ -6,16 +6,15 @@ public class BeginAct : MonoBehaviour
 {
     public AudioSource source;
     public AudioClip clip;
+    public float _delayInSeconds = 3;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        source.PlayOneShot(clip);
+        StartCoroutine(_StartScene());
     }
-
-    // Update is called once per frame
-    void Update()
+    private IEnumerator _StartScene()
     {
-
+        yield return new WaitForSeconds(_delayInSeconds);
+        source.PlayOneShot(clip);
     }
 }

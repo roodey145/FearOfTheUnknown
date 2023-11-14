@@ -4,40 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneEndedListener : Listener
+public class SceneEndedListener : FadeListener
 {
-    [SerializeField] float _fadeOutSpeedInSeconds = 3.0f;
-    [SerializeField] Image _image;
-    private float _fadeOutTimer = 0;
-    private bool _fadeOut = false;
-    // Start is called before the first frame update
-    void Start()
+
+    protected override void _FadeEnd()
     {
-        //_fadeOutTimer = _fadeOutSpeedInSeconds;
-        if(_image == null)
-            _image = GetComponentInChildren<Image>();
-        //EventsController.RegisterEvent(_eventName);
-    }
+        base._FadeEnd();
 
-    // Update is called once per frame
-    void Update()
-    {
-        if( _fadeOut )
-        {
-
-            _image.color = new Color(0, 0, 0, _fadeOutTimer / _fadeOutSpeedInSeconds);
-            _fadeOutTimer += Time.deltaTime;
-
-            if(_fadeOutTimer >= 1)
-            {
-                print("Scene One");
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Open the next scene
-            }
-        }
-    }
-
-    protected override void _Action()
-    {
-        _fadeOut = true;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

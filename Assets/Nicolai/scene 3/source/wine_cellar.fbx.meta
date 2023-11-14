@@ -3,7 +3,27 @@ guid: a2dca99e8d0c0994e8a4d3e7890283aa
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: details
+    second: {fileID: 2100000, guid: ebf22fd0584d0a34886ea6a83567ed88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: furniture
+    second: {fileID: 2100000, guid: fa92a4ca654751e4fa30c9a12576cdf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: small_details
+    second: {fileID: 2100000, guid: c15fa25c39f8cd64d9f6630547406632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walls
+    second: {fileID: 2100000, guid: aa5df64e414e7f947a8358c1e5721242, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

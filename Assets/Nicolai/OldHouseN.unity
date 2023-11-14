@@ -13727,6 +13727,7 @@ MonoBehaviour:
   _eventName: SceneEnded
   _fadeOutSpeedInSeconds: 3
   _image: {fileID: 1029391865}
+  _fadeIn: 0
 --- !u!4 &549076445
 Transform:
   m_ObjectHideFlags: 0
