@@ -1516,7 +1516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: SceneEnded
-  _fadeOutSpeedInSeconds: 10
+  _fadeOutSpeedInSeconds: 3
   _image: {fileID: 1899662251}
   _fadeIn: 1
 --- !u!4 &430006364

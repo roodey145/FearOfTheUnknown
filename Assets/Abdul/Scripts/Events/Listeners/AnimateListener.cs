@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEngine.GraphicsBuffer;
@@ -79,6 +78,7 @@ public class AnimateListener : MonoBehaviour
 
 
     #region 
+#if UNITY_EDITOR
     [CustomEditor(typeof(AnimateListener))]
     [CanEditMultipleObjects]
     public class MyScriptEditor : Editor
@@ -111,6 +111,7 @@ public class AnimateListener : MonoBehaviour
             serializedObject.ApplyModifiedProperties();
         }
     }
+#endif
     #endregion
 }
 
