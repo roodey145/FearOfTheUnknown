@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class paperController : MonoBehaviour
 {
@@ -8,11 +9,18 @@ public class paperController : MonoBehaviour
     public AudioClip clip;
     public GameObject canvas;
     public Light spotLight;
+
+    public InputActionReference[] actions;
+
     private bool newpaperOpen;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        for(int i = 0; i < actions.Length; i++)
+        {
+            actions[i].action.performed += _HideNewsPaper;
+        }
     }
 
     // Update is called once per frame
@@ -39,5 +47,15 @@ public class paperController : MonoBehaviour
             
         }
 
+    }
+
+    private void _HideNewsPaper(InputAction.CallbackContext callbackContext)
+    {
+        if (newpaperOpen == true)// +controller input button  -Input.GetKeyDown(KeyCode.E)
+        {
+            canvas.SetActive(false);
+            newpaperOpen = false;
+            heartBeat.instance.heartBeating = true;
+        }
     }
 }

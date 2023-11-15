@@ -8,6 +8,7 @@ public class PlayAudioListener : Listener
 {
     private AudioSource _audioSource;
     [SerializeField] private AudioClip _clip;
+    [SerializeField] private bool _repeat = false;
 
     [SerializeField] private string _postTriggerEventName = "AudioEnded";
 
@@ -20,7 +21,10 @@ public class PlayAudioListener : Listener
     // Update is called once per frame
     void Update()
     {
-        
+        if(_repeat && !_audioSource.isPlaying)
+        {
+            _audioSource.Play();
+        }
     }
 
 

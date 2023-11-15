@@ -3175,6 +3175,7 @@ Transform:
   - {fileID: 2076010879}
   - {fileID: 1597025015}
   - {fileID: 1402263828}
+  - {fileID: 661898564}
   - {fileID: 109976079}
   - {fileID: 1662245004}
   - {fileID: 2108688086}
@@ -3257,6 +3258,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
@@ -4548,7 +4554,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151766307}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
   m_Name: 
@@ -13509,6 +13515,7 @@ MonoBehaviour:
   _eventName: SceneEnded
   _fadeOutSpeedInSeconds: 3
   _image: {fileID: 1029391865}
+  _fadeIn: 1
 --- !u!4 &549076445
 Transform:
   m_ObjectHideFlags: 0
@@ -16911,6 +16918,114 @@ Transform:
   - {fileID: 1419919429}
   m_Father: {fileID: 1419143198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &661898563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661898564}
+  - component: {fileID: 661898568}
+  - component: {fileID: 661898567}
+  - component: {fileID: 661898566}
+  - component: {fileID: 661898565}
+  m_Layer: 2
+  m_Name: NoticeSomeoneBehind (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661898564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661898563}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 27.86, y: 0.5, z: -0.088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 78287128}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &661898565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661898563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: Player
+  _eventName: Animate
+  _passiveEventTriggerDelay: 1.5
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &661898566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661898563}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &661898567
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661898563}
+  m_Mesh: {fileID: 0}
+--- !u!65 &661898568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661898563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.3841636, z: 4.1412907}
+  m_Center: {x: 0, y: 0.6920818, z: -0.009196758}
 --- !u!1001 &663367283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19648,6 +19763,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destinationsInfo:
+  - name: Do Nothing
+    destination: {fileID: 1122636529}
+    matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 0
+    clip:
+      animationTriggerName: 
+      animationDelayInSeconds: 0
+      audioClip: {fileID: 0}
+      audioExecutionPhase: 2
+      audioDelayInSeconds: 0
+      animationsClip: []
+      animationsClipPointer: 0
+      animateable: {fileID: 0}
+      animateableExecutionPhase: 0
+      animateableDelayInSeconds: 0
+      callWhenDone:
+        m_PersistentCalls:
+          m_Calls: []
+    movingAnimationTriggerName: GirlIdleTrigger
+    speedIncrease: 0
   - name: Waiting near the exist
     destination: {fileID: 1587014767}
     matchDestinationRotation: 1
@@ -19655,13 +19790,13 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: c88825a62240baa45a071b8b09642050, type: 3}
+      audioClip: {fileID: 8300000, guid: a51c549d5de259d42a23c5bb9f23c11c, type: 3}
       audioExecutionPhase: 2
       audioDelayInSeconds: 1
       animationsClip:
       - animationTriggerName: 
         animationDelayInSeconds: 0
-        audioClip: {fileID: 8300000, guid: 7d000ccb134ada748bc95ba8781b97f8, type: 3}
+        audioClip: {fileID: 8300000, guid: 6b259fb99fc0811418c89da8a0617ad6, type: 3}
         audioExecutionPhase: 0
         audioDelayInSeconds: 0
         animationsClip: []
@@ -19672,6 +19807,26 @@ MonoBehaviour:
         callWhenDone:
           m_PersistentCalls:
             m_Calls: []
+      animationsClipPointer: 0
+      animateable: {fileID: 0}
+      animateableExecutionPhase: 0
+      animateableDelayInSeconds: 0
+      callWhenDone:
+        m_PersistentCalls:
+          m_Calls: []
+    movingAnimationTriggerName: WalkTrigger
+    speedIncrease: 0
+  - name: Notice the dad that someone is behind
+    destination: {fileID: 0}
+    matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 1
+    clip:
+      animationTriggerName: YellTrigger
+      animationDelayInSeconds: 0
+      audioClip: {fileID: 8300000, guid: 99f29df5aeea4b7478c10f1b515a5832, type: 3}
+      audioExecutionPhase: 2
+      audioDelayInSeconds: 0
+      animationsClip: []
       animationsClipPointer: 0
       animateable: {fileID: 0}
       animateableExecutionPhase: 0
@@ -19702,68 +19857,12 @@ MonoBehaviour:
     movingAnimationTriggerName: WalkTrigger
     speedIncrease: 0
   _destinationPointer: 0
-  _destinations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _destinations: []
   _destination: {x: 0, y: 0, z: 0}
   _moveEvent: Move
   _moveAnimationTriggerName: WalkTrigger
   _moveStageId: 0
-  _animationsInfo:
-  - animationTriggerName: LookAroundTrigger
-    animationDelayInSeconds: 0.25
-    audioClip: {fileID: 8300000, guid: 7d000ccb134ada748bc95ba8781b97f8, type: 3}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0.5
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlRunTrigger
-    animationDelayInSeconds: 0.75
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 2
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlIdleTrigger
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 2
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlIdleTrigger
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
+  _animationsInfo: []
   _animateEvent: Animate
   _animateStageId: 0
   _animator: {fileID: 683490729}
@@ -19922,13 +20021,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683490725}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventName: NoticeSomeoneBehind
-  _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
+  _eventName: NoticeSomeoneBehind1
+  _clip: {fileID: 8300000, guid: 99f29df5aeea4b7478c10f1b515a5832, type: 3}
+  _repeat: 0
   _postTriggerEventName: Move
 --- !u!1001 &690464231
 PrefabInstance:
@@ -22511,7 +22611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.04
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -22529,9 +22629,9 @@ Canvas:
   m_GameObject: {fileID: 865175640}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1332341849}
+  m_PlaneDistance: 0.5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -29068,6 +29168,151 @@ Transform:
   - {fileID: 2125968583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1074736518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074736519}
+  - component: {fileID: 1074736521}
+  - component: {fileID: 1074736520}
+  m_Layer: 0
+  m_Name: HeartBeat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074736519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074736518}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1462476173}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1074736520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074736518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown_1
+  _clip: {fileID: 8300000, guid: 6b8e2567ab6d96a46b103b3923532678, type: 3}
+  _repeat: 1
+  _postTriggerEventName: 
+--- !u!82 &1074736521
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074736518}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1077781641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29681,6 +29926,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1111595621}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1122636528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1122636529}
+  - component: {fileID: 1122636533}
+  - component: {fileID: 1122636532}
+  - component: {fileID: 1122636531}
+  - component: {fileID: 1122636530}
+  m_Layer: 2
+  m_Name: WaitArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1122636529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122636528}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.805, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1316063324}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1122636530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122636528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62b573e321ecec43b6899d34d49e230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTag: GuideCharacter
+  _eventName: Animate
+  _passiveEventTriggerDelay: 0.5
+  _repeatable: 0
+  _hasBeenExecuted: 0
+--- !u!54 &1122636531
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122636528}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!33 &1122636532
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122636528}
+  m_Mesh: {fileID: 0}
+--- !u!65 &1122636533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122636528}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1124457120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29836,6 +30189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
@@ -36170,6 +36528,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1587014767}
+  - {fileID: 1122636529}
   - {fileID: 495098544}
   m_Father: {fileID: 1352311759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38633,7 +38992,7 @@ Transform:
   m_GameObject: {fileID: 1402263827}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 21.854, y: 0.5, z: -0.088}
+  m_LocalPosition: {x: 34.54, y: 0.5, z: -0.088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41050,12 +41409,8 @@ GameObject:
   - component: {fileID: 1462476176}
   - component: {fileID: 1462476175}
   - component: {fileID: 1462476177}
-  - component: {fileID: 1462476178}
   - component: {fileID: 1462476180}
   - component: {fileID: 1462476179}
-  - component: {fileID: 1462476181}
-  - component: {fileID: 1462476183}
-  - component: {fileID: 1462476182}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -41092,7 +41447,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1332341849}
   m_OriginBaseGameObject: {fileID: 1462476170}
   m_CameraFloorOffsetObject: {fileID: 229935188}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.1176
 --- !u!4 &1462476173
 Transform:
@@ -41109,6 +41464,7 @@ Transform:
   m_Children:
   - {fileID: 229935189}
   - {fileID: 450562890}
+  - {fileID: 1074736519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1462476174
@@ -41235,20 +41591,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
---- !u!114 &1462476178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462476170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bdffcfaac8b55c488e0cdb1484c8170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _visionAngle: 45
-  _rayIntensity: 25
 --- !u!82 &1462476179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41359,47 +41701,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: c635dc8edcbc42945b390dec0361ae6b, type: 3}
   _eventName: DoorSlammed
---- !u!114 &1462476181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462476170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: PlayerGitHit
-  _clip: {fileID: 8300000, guid: c9180defe2ffca54d808c7dc7891a21f, type: 3}
-  _postTriggerEventName: SceneEnded
---- !u!114 &1462476182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462476170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 669f4c117e64b134f9225804eaa33581, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: PlayerMovementOn
---- !u!114 &1462476183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462476170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e28498ccf52d5f145ad6546b57bebc8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: PlayerMovementOff
 --- !u!1001 &1464665686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44754,6 +45055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleport Interactor
       objectReference: {fileID: 0}
+    - target: {fileID: 2761784063978902507, guid: c1800acf6366418a9b5f610249000331,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45151,7 +45457,7 @@ Transform:
   m_GameObject: {fileID: 1597025014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 21.854, y: 0.5, z: -0.088}
+  m_LocalPosition: {x: 34.54, y: 0.5, z: -0.088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45265,7 +45571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventName: ShutLightDown
+  _eventName: ShutLightDown_1
   _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!114 &1597025018
 MonoBehaviour:
@@ -56845,6 +57151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: DoorCrack
   _clip: {fileID: 8300000, guid: 043b14aedfc80a14b8f6c1951a6c5386, type: 3}
+  _repeat: 0
   _postTriggerEventName: GirlScream
 --- !u!82 &2022554253
 AudioSource:
@@ -57805,7 +58112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: 
+  _eventName: Move
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -59375,7 +59682,7 @@ GameObject:
   - component: {fileID: 2125220633}
   - component: {fileID: 2125220632}
   m_Layer: 2
-  m_Name: TurnOffThirdLightLine (1)
+  m_Name: SceneEnded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59519,7 +59826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: TheEnd
+  _eventName: SceneEnded
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
