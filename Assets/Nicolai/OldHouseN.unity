@@ -2105,6 +2105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: SeemsOddlyFamilair
   _clip: {fileID: 8300000, guid: 2174c479c82be024d829e6fe180347fb, type: 3}
+  _repeat: 0
   _postTriggerEventName: AudioEnded
 --- !u!82 &48446396
 AudioSource:
@@ -3580,6 +3581,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
@@ -7730,7 +7736,7 @@ Transform:
   m_GameObject: {fileID: 229935188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13727,7 +13733,7 @@ MonoBehaviour:
   _eventName: SceneEnded
   _fadeOutSpeedInSeconds: 3
   _image: {fileID: 1029391865}
-  _fadeIn: 0
+  _fadeIn: 1
 --- !u!4 &549076445
 Transform:
   m_ObjectHideFlags: 0
@@ -20333,6 +20339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: GirlScream
   _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
+  _repeat: 0
   _postTriggerEventName: PlayerGitHit
 --- !u!114 &683490737
 MonoBehaviour:
@@ -29467,7 +29474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1061684519
 Transform:
   m_ObjectHideFlags: 0
@@ -31200,6 +31207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cfa5b2ffe38b7354da41530eced5a0f3, type: 2}
@@ -32219,7 +32231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1143340696
 Transform:
   m_ObjectHideFlags: 0
@@ -37867,7 +37879,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6666667, y: 0.66666, z: 0.66666}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 229935189}
@@ -42480,8 +42492,8 @@ MonoBehaviour:
   m_Camera: {fileID: 1332341849}
   m_OriginBaseGameObject: {fileID: 1462476170}
   m_CameraFloorOffsetObject: {fileID: 229935188}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1.7
 --- !u!4 &1462476173
 Transform:
   m_ObjectHideFlags: 0
@@ -42492,7 +42504,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.333, y: 0, z: -0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 229935189}
@@ -42761,6 +42773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: PlayerGitHit
   _clip: {fileID: 8300000, guid: c9180defe2ffca54d808c7dc7891a21f, type: 3}
+  _repeat: 0
   _postTriggerEventName: SceneEnded
 --- !u!114 &1462476182
 MonoBehaviour:
@@ -46172,6 +46185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Teleport Interactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761784063978902507, guid: c1800acf6366418a9b5f610249000331,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58569,6 +58587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: DoorCrack
   _clip: {fileID: 8300000, guid: 043b14aedfc80a14b8f6c1951a6c5386, type: 3}
+  _repeat: 0
   _postTriggerEventName: GirlScream
 --- !u!82 &2022554253
 AudioSource:
