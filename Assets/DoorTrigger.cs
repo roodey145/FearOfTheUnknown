@@ -27,37 +27,39 @@ public class DoorTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (startSequence) { 
-        timer += Time.deltaTime;
+        //if (startSequence) 
+        //{ 
+        //    timer += Time.deltaTime;
 
-            //play door sound
-            if (!audio0C)
-            {
-                source[0].PlayOneShot(clip[0]);
-                audio0C = true;
-            }
+        //    //play door sound
+        //    if (!audio0C)
+        //    {
+        //        source[0].PlayOneShot(clip[0]);
+        //        audio0C = true;
+        //    }
 
-        if (timer > 3 && !audio1C)
-        {
-            source[1].PlayOneShot(clip[1]);
-                audio1C = true;
-            }
+        //    if (timer > 3 && !audio1C)
+        //    {
+        //        source[1].PlayOneShot(clip[1]);
+        //        audio1C = true;
+        //    }
 
-        if (timer > 6 && !audio2C)
-        {
-                //play pinting falling sound and animation
-                paintingRB.useGravity = true;
-                source[2].PlayOneShot(clip[2]);
-                audio2C = true;
-        }
-        }
+        //    if (timer > 6 && !audio2C)
+        //    {
+        //            //play pinting falling sound and animation
+        //            paintingRB.useGravity = true;
+        //            source[2].PlayOneShot(clip[2]);
+        //            audio2C = true;
+        //    }
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && !_doorIsOpen)
         {
             startSequence = true;
+            StartCoroutine(_StartDoorLockedSequence());
         }
 
         if(other.tag == "Key" && !_doorIsOpen)
@@ -77,5 +79,16 @@ public class DoorTrigger : MonoBehaviour
         source[3].PlayOneShot(clip[3]);
         yield return new WaitForSeconds(clip[3].length);
         EventsController.RegisterEvent(_sceneEndedEventName); // Will cause the scene ended listener to move to the next scene
+    }
+
+
+    private IEnumerator _StartDoorLockedSequence()
+    {   
+        source[0].PlayOneShot(clip[0]);
+        yield return new WaitForSeconds(clip[0].length); // Wait until clip One ends
+        source[1].PlayOneShot(clip[1]);
+        yield return new WaitForSeconds(clip[1].length); // Wait until clip Two ends
+        paintingRB.useGravity = true;
+        source[2].PlayOneShot(clip[2]);
     }
 }

@@ -3275,6 +3275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13493,6 +13498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549076445}
   - component: {fileID: 549076444}
+  - component: {fileID: 549076446}
   m_Layer: 0
   m_Name: SceneEndedListener
   m_TagString: Untagged
@@ -13532,6 +13538,22 @@ Transform:
   - {fileID: 865175644}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &549076446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549076443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2a1cc3b7e3b1045b75ffe4cc2d891e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: SceneStart
+  _fadeOutSpeedInSeconds: 3
+  _image: {fileID: 1029391865}
+  _fadeIn: 0
 --- !u!1001 &554272716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19720,6 +19742,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 683490735}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683490737}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683490738}
   m_SourcePrefab: {fileID: 100100000, guid: d7fad2304dfbc2b4e96938a509cb92fc, type: 3}
 --- !u!1 &683490725 stripped
 GameObject:
@@ -19833,15 +19863,27 @@ MonoBehaviour:
       animateableDelayInSeconds: 0
       callWhenDone:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 683490737}
+            m_TargetAssemblyTypeName: SimpleEventTrigger, Assembly-CSharp
+            m_MethodName: TriggerEvent
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     movingAnimationTriggerName: WalkTrigger
     speedIncrease: 0
-  - name: TryingToOpenTheExit
-    destination: {fileID: 495098544}
-    matchDestinationRotation: 1
+  - name: Rotate Around To Face The Exit
+    destination: {fileID: 0}
+    matchDestinationRotation: 0
     moveToNextDestinationWhendone: 0
     clip:
-      animationTriggerName: GirlIdleTrigger
+      animationTriggerName: Turn180Trigger
       animationDelayInSeconds: 0
       audioClip: {fileID: 0}
       audioExecutionPhase: 2
@@ -19853,8 +19895,40 @@ MonoBehaviour:
       animateableDelayInSeconds: 0
       callWhenDone:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 683490738}
+            m_TargetAssemblyTypeName: SimpleEventTrigger, Assembly-CSharp
+            m_MethodName: TriggerEvent
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     movingAnimationTriggerName: WalkTrigger
+    speedIncrease: 0
+  - name: TryingToOpenTheExit
+    destination: {fileID: 495098544}
+    matchDestinationRotation: 1
+    moveToNextDestinationWhendone: 0
+    clip:
+      animationTriggerName: PuchDoorTrigger
+      animationDelayInSeconds: 0
+      audioClip: {fileID: 8300000, guid: 51b337172bee82749a4e5004c42e8404, type: 3}
+      audioExecutionPhase: 2
+      audioDelayInSeconds: 0
+      animationsClip: []
+      animationsClipPointer: 0
+      animateable: {fileID: 0}
+      animateableExecutionPhase: 0
+      animateableDelayInSeconds: 0
+      callWhenDone:
+        m_PersistentCalls:
+          m_Calls: []
+    movingAnimationTriggerName: GirlRunTrigger
     speedIncrease: 0
   _destinationPointer: 0
   _destinations: []
@@ -20028,8 +20102,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: NoticeSomeoneBehind1
   _clip: {fileID: 8300000, guid: 99f29df5aeea4b7478c10f1b515a5832, type: 3}
+  _delayInSeconds: 0
   _repeat: 0
   _postTriggerEventName: Move
+--- !u!114 &683490737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683490725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428d97ee750c5824e9164ddf5215f5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: Animate
+--- !u!114 &683490738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683490725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428d97ee750c5824e9164ddf5215f5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: Move
 --- !u!1001 &690464231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29168,6 +29269,74 @@ Transform:
   - {fileID: 2125968583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1074399630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.9626596
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1116679
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6835023
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fb41bf1d98ed076469aa44000c992a8a,
+        type: 3}
+      propertyPath: m_Name
+      value: GirlIdle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb41bf1d98ed076469aa44000c992a8a, type: 3}
 --- !u!1 &1074736518
 GameObject:
   m_ObjectHideFlags: 0
@@ -29215,6 +29384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: ShutLightDown_1
   _clip: {fileID: 8300000, guid: 6b8e2567ab6d96a46b103b3923532678, type: 3}
+  _delayInSeconds: 0
   _repeat: 1
   _postTriggerEventName: 
 --- !u!82 &1074736521
@@ -30204,6 +30374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RightHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cbf87b23d95a4204bbfb934159b283ae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52782,6 +52957,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1829324581}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1832463978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832463980}
+  - component: {fileID: 1832463979}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1832463979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832463978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b42ee0b7b8de14bb8776b06f12b93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _environmentColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!4 &1832463980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832463978}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 46.899715, y: 1.6156676, z: 0.13719022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838663143
 GameObject:
   m_ObjectHideFlags: 0
@@ -57151,6 +57371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventName: DoorCrack
   _clip: {fileID: 8300000, guid: 043b14aedfc80a14b8f6c1951a6c5386, type: 3}
+  _delayInSeconds: 0
   _repeat: 0
   _postTriggerEventName: GirlScream
 --- !u!82 &2022554253
@@ -69032,3 +69253,5 @@ SceneRoots:
   - {fileID: 683490724}
   - {fileID: 1462476173}
   - {fileID: 1352311759}
+  - {fileID: 1832463980}
+  - {fileID: 1074399630}
