@@ -8,6 +8,7 @@ public class PlayAudioListener : Listener
 {
     private AudioSource _audioSource;
     [SerializeField] private AudioClip _clip;
+    [SerializeField] private float _delayInSeconds = 0f;
     [SerializeField] private bool _repeat = false;
 
     [SerializeField] private string _postTriggerEventName = "AudioEnded";
@@ -30,14 +31,17 @@ public class PlayAudioListener : Listener
 
     protected override void _Action()
     {
-        _audioSource.clip = _clip;
-        _audioSource.Play();
-        StartCoroutine(_TriggerPostEvent());
+        StartCoroutine(_PlayDelayedAudio());
     }
 
 
-    private IEnumerator _TriggerPostEvent()
+    private IEnumerator _PlayDelayedAudio()
     {
+        yield return new WaitForSeconds(_delayInSeconds);
+
+        _audioSource.clip = _clip;
+        _audioSource.Play();
+
         yield return new WaitForSeconds(_audioSource.clip.length);
         EventsController.RegisterEvent(_postTriggerEventName);
     }
