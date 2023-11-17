@@ -28,11 +28,9 @@ public class PlayerLookingTowardsTheGirlInTheLivingRoomCondition : Condition
         // Calculate the angle between the two directions
         if(Vector3.Angle(gForwardN, pForwardN) < _visionAngle)
         {
-            print("Player Looking toward the character");
             // Check if the player can see the girl character, or if there is anything between them
             if(_DetectTarget())
             {
-                print("Player can see the guide character");
                 inVision = true;
             }
         }
@@ -77,8 +75,8 @@ public class PlayerLookingTowardsTheGirlInTheLivingRoomCondition : Condition
                     targetDetected = true;
                     break;
                 }
-                else
-                    print(hit.collider.gameObject.name);
+                //else
+                //    print(hit.collider.gameObject.name);
             }
 
             angle += angleShift;

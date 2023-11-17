@@ -3693,7 +3693,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37491,7 +37491,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cbf87b23d95a4204bbfb934159b283ae,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50710,6 +50710,7 @@ GameObject:
   - component: {fileID: 1462476180}
   - component: {fileID: 1462476179}
   - component: {fileID: 1462476181}
+  - component: {fileID: 1462476182}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -51013,6 +51014,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: PlayerCaught
+  _freeze: 0
+--- !u!114 &1462476182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462476170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669f4c117e64b134f9225804eaa33581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: NoticeSomeoneBehind
+  _movementSpeed: 1.5
 --- !u!1001 &1464665686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53390,7 +53406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: PlayerCaughtAudioEnded
-  _sceneBuildIndex: 1
+  _sceneBuildIndex: 5
 --- !u!1 &1523668003
 GameObject:
   m_ObjectHideFlags: 0

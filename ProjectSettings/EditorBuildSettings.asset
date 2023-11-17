@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Nicolai/OldHouseLastScene.unity
     guid: 5fbcdffbd24ec7f4cb25a780ceca4d97
   - enabled: 1
-    path: Assets/Nicolai/LastScene.unity
+    path: Assets/Nicolai/LastScenes/LastScene.unity
     guid: fa2e2cec36cd41945821ea28566e0adc
+  - enabled: 1
+    path: Assets/Nicolai/LastScenes/LastSceneDeath.unity
+    guid: 67cf5d637a391d04ca91940125865798
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bf11eb1879db9624b8056469a83e2f07,
       type: 2}

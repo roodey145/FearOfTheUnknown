@@ -28,7 +28,6 @@ public class Teleport : Event
             _GetTarget().GetComponent<NavMeshAgent>().enabled = false;
         }
 
-        print(_GetTarget().name);
 
         _GetTarget().transform.position = positionToMoveTo + extraProportionPosition;
         
@@ -41,7 +40,6 @@ public class Teleport : Event
         {
             _GetTarget().GetComponent<NavMeshAgent>().enabled = true;
         }
-        print("New Position: " + _GetTarget().transform.position);
     }
 
     private Vector3 _CalcExtraProportionPosition()
