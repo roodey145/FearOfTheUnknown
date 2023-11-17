@@ -26,7 +26,6 @@ public class PlayerEventsListener : MonoBehaviour
 
     public void PlayAudio()
     {
-        print("Sound is playing");
         _audioSource.clip = _clip;
         _audioSource.Play();
     }

@@ -51534,6 +51534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventName: PlayerMovementOff
+  _freeze: 1
 --- !u!1 &1462750087
 GameObject:
   m_ObjectHideFlags: 0
@@ -60545,7 +60546,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -60590,7 +60591,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -62545,7 +62546,7 @@ MonoBehaviour:
     animationDelayInSeconds: 0
     audioClip: {fileID: 8300000, guid: 52851ca32abc8a94882d8b68255a9ad3, type: 3}
     audioExecutionPhase: 0
-    audioDelayInSeconds: 4
+    audioDelayInSeconds: 3
     animationsClip: []
     animationsClipPointer: 0
     animateable: {fileID: 0}
@@ -62558,7 +62559,7 @@ MonoBehaviour:
     animationDelayInSeconds: 0
     audioClip: {fileID: 8300000, guid: 671459b861abbc44a8d1069910e90915, type: 3}
     audioExecutionPhase: 0
-    audioDelayInSeconds: 4
+    audioDelayInSeconds: 3
     animationsClip: []
     animationsClipPointer: 0
     animateable: {fileID: 0}
@@ -62581,7 +62582,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

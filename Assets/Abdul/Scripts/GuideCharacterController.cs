@@ -87,7 +87,6 @@ public class GuideCharacterController : MonoBehaviour
     private void _MoveToNextDestination()
     {
         //print($"Destination Pointer {_destinationPointer} , Destination Length: {_destinationsInfo.Length}");
-        print($"Moving Move: ({_moving})");
         if (_moving) _destinationPointer++;
 
         if (_destinationsInfo.Length <= _destinationPointer) return;
@@ -100,7 +99,6 @@ public class GuideCharacterController : MonoBehaviour
         if (_destinationsInfo[_destinationPointer].destination != null)
         {
             _destination = _destinationsInfo[_destinationPointer].destination.position;
-            print($"Destination assigned");
         }
 
         // Increase the agent speed if the current animation requires that
@@ -108,7 +106,6 @@ public class GuideCharacterController : MonoBehaviour
 
         _agent.SetDestination(_destination);
 
-        print($"Moving");
 
 
         // Animate the character
@@ -135,6 +132,5 @@ public class GuideCharacterController : MonoBehaviour
 
         _moving = false;
         _destinationPointer++;
-        print($"Moving Animation: ({_moving})");
     }
 }

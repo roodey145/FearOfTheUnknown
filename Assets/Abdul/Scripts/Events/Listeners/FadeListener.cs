@@ -36,7 +36,6 @@ public class FadeListener : Listener
 
             if (_alpha > 1 || _alpha < 0)
             {
-                print("Fade Ended: " + _alpha);
                 _fadeEnded = true;
                 _FadeEnd();
             }

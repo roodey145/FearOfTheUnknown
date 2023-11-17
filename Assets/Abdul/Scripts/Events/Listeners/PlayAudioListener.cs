@@ -41,7 +41,6 @@ public class PlayAudioListener : Listener
 
         _audioSource.clip = _clip;
         _audioSource.Play();
-
         yield return new WaitForSeconds(_audioSource.clip.length);
         EventsController.RegisterEvent(_postTriggerEventName);
     }

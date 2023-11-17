@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PlayerMovementFreezeListener : Listener
 {
+    [SerializeField] private bool _freeze = false;
     protected override void _Action()
     {
         GetComponent<ActionBasedContinuousMoveProvider>().moveSpeed = 0;
@@ -13,7 +14,7 @@ public class PlayerMovementFreezeListener : Listener
     // Start is called before the first frame update
     void Start()
     {
-        EventsController.RegisterEvent(_eventName);
+        if(_freeze) EventsController.RegisterEvent(_eventName);
     }
 
     // Update is called once per frame
