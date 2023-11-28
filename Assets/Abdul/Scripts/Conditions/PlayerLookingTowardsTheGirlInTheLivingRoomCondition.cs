@@ -58,7 +58,7 @@ public class PlayerLookingTowardsTheGirlInTheLivingRoomCondition : Condition
         float angleShift = (_visionAngle * 2) / visionRays.Length;
         RaycastHit hit;
 
-        Vector3 raysOrigin = transform.position + transform.up + transform.forward / 2f;
+        Vector3 raysOrigin = transform.position/* + transform.up + transform.forward / 2f*/;
 
         for (int i = 0; i < visionRays.Length; i++)
         {

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.XR.CoreUtils;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEngine.GraphicsBuffer;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(AudioSource))]
@@ -13,6 +11,7 @@ public class AnimateListener : MonoBehaviour
     [SerializeField] private string _eventName;
     [SerializeField] private AnimationClipInfo[] _clipInfo;
     [SerializeField] private bool _repeat = false;
+    [SerializeField] private string _repeatStopEventName;
     [SerializeField] private float _repeatDelayInSeconds;
     [SerializeField] private Condition _repeatStopCondition; // Needed when _repeat is true
 
@@ -27,6 +26,12 @@ public class AnimateListener : MonoBehaviour
     {
         EventListener eventListener = new EventListener( ( eventName ) => eventName == _eventName, _Execute );
         EventsController.RegisterListener( eventListener );
+
+        if(_repeat && _repeatStopEventName != "")
+        {
+            eventListener = new EventListener((eventName) => eventName == _repeatStopEventName, _StopRepeating);
+            EventsController.RegisterListener(eventListener);
+        }
     }
 
     // Start is called before the first frame update
@@ -41,8 +46,9 @@ public class AnimateListener : MonoBehaviour
     {
         if(_isPlaying && _repeat && _repeatStopCondition != null)
         {
-            if(_repeatStopCondition.Check())
+            if (_repeatStopCondition.Check())
             {
+                print("Target DETECTED ========================================================================");
                 _animator.enabled = false;
                 _audioSource.enabled = false;
 
@@ -58,7 +64,7 @@ public class AnimateListener : MonoBehaviour
 
     private void _Execute(/*string eventName*/)
     {
-        print($"Executing: {_eventName}");
+        //print($"Executing: {_eventName}");
         _animator.enabled = true;
         _audioSource.enabled = true;
         _isPlaying = true;
@@ -68,12 +74,23 @@ public class AnimateListener : MonoBehaviour
     private void _Play()
     {
         //print("Pointer: " + _clipsPointer + ", Clips Length: " + _clipInfo.Length);
-        if (_clipInfo == null || _clipInfo.Length <= _clipsPointer
+        if (_clipInfo == null || (_clipInfo.Length <= _clipsPointer && !_repeat)
             || !_animator.enabled || !_audioSource.enabled) return;
 
         if (_repeat && _clipsPointer >= _clipInfo.Length) _clipsPointer = 0;
 
         _clipInfo[_clipsPointer++].Play(_animator, _audioSource, _Play);
+    }
+
+    private void _StopRepeating()
+    {
+        if(_repeat && _isPlaying)
+        {
+            _animator.enabled = false;
+            _audioSource.enabled = false;
+            _isPlaying = false;
+            EventsController.RegisterEvent("Move");
+        }
     }
 
 
@@ -86,6 +103,7 @@ public class AnimateListener : MonoBehaviour
         SerializedProperty _eventName;
         SerializedProperty _clipInfo;
         SerializedProperty _repeat;
+        SerializedProperty _repeatStopEventName;
         SerializedProperty _repeatDelayInSeconds;
         SerializedProperty _repeatStopCondition;
 
@@ -94,6 +112,7 @@ public class AnimateListener : MonoBehaviour
             _eventName = serializedObject.FindProperty("_eventName");
             _clipInfo = serializedObject.FindProperty("_clipInfo");
             _repeat = serializedObject.FindProperty("_repeat");
+            _repeatStopEventName = serializedObject.FindProperty("_repeatStopEventName");
             _repeatDelayInSeconds = serializedObject.FindProperty("_repeatDelayInSeconds");
             _repeatStopCondition = serializedObject.FindProperty("_repeatStopCondition");
         }
@@ -107,7 +126,10 @@ public class AnimateListener : MonoBehaviour
             EditorGUILayout.PropertyField(_repeat);
             EditorGUILayout.PropertyField(_repeatDelayInSeconds);
             if (myScript._repeat)
+            {
+                EditorGUILayout.PropertyField(_repeatStopEventName);
                 EditorGUILayout.PropertyField(_repeatStopCondition);
+            }
             serializedObject.ApplyModifiedProperties();
         }
     }
