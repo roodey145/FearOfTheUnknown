@@ -49,7 +49,6 @@ public class AnimateListener : MonoBehaviour
         {
             if (_repeatStopCondition.Check())
             {
-                print("Target DETECTED ========================================================================");
                 _animator.enabled = false;
                 _audioSource.enabled = false;
 
