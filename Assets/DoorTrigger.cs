@@ -64,9 +64,6 @@ public class DoorTrigger : MonoBehaviour
 
         if(other.tag == "Key" && !_doorIsOpen)
         {
-            
-            Debug.Log("YOOO");
-            //
             //fade to new scene
             StartCoroutine(_OpenTheDoor());
         }
@@ -76,19 +73,37 @@ public class DoorTrigger : MonoBehaviour
     private IEnumerator _OpenTheDoor()
     {
         _doorIsOpen = true;
-        source[3].PlayOneShot(clip[3]);
-        yield return new WaitForSeconds(clip[3].length);
+        _StopPlayingTheSequence(); // Stop playing the sequence sounds if they are playing
+        source[3].clip = clip[3];
+        source[3].Play();
+        float delay = clip[3].length - SceneEndedListener.FadeTime;
+        if (delay < 1) delay = 1;
+        yield return new WaitForSeconds(delay);
         EventsController.RegisterEvent(_sceneEndedEventName); // Will cause the scene ended listener to move to the next scene
     }
 
 
     private IEnumerator _StartDoorLockedSequence()
     {   
-        source[0].PlayOneShot(clip[0]);
-        yield return new WaitForSeconds(clip[0].length); // Wait until clip One ends
-        source[1].PlayOneShot(clip[1]);
-        yield return new WaitForSeconds(clip[1].length); // Wait until clip Two ends
-        paintingRB.useGravity = true;
-        source[2].PlayOneShot(clip[2]);
+        for(int i = 0; i < 3; i++)
+        {
+            if (!_doorIsOpen)
+            {
+                source[i].clip = clip[i];
+                source[i].Play();
+                if (i == 2) paintingRB.useGravity = true;
+                yield return new WaitForSeconds(clip[i].length);
+            }
+            else break;
+        }
+    }
+
+
+    private void _StopPlayingTheSequence()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            source[i].Stop();
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FadeListener : Listener
 {
-    [SerializeField] float _fadeOutSpeedInSeconds = 3.0f;
+    [SerializeField] protected float _fadeOutSpeedInSeconds = 3.0f;
     [SerializeField] Image _image;
     [SerializeField] bool _fadeIn = true;
 

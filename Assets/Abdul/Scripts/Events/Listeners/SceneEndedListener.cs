@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class SceneEndedListener : FadeListener
 {
+    public static float FadeTime;
+
+    private new void Awake()
+    {
+        base.Awake();
+        FadeTime = _fadeOutSpeedInSeconds;
+    }
 
     protected override void _FadeEnd()
     {

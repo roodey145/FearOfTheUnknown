@@ -9,7 +9,7 @@ public abstract class Listener : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Awake()
+    protected void Awake()
     {
         EventListener eventListener = new EventListener((string eventName) => eventName == _eventName, _Action);
         EventsController.RegisterListener(eventListener);
