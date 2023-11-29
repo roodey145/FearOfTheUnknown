@@ -20,6 +20,7 @@ public class AnimateListener : MonoBehaviour
     private Animator _animator;
     private AudioSource _audioSource;
     private bool _isPlaying = false;
+    private bool _executed = false;
 
 
     private void Awake()
@@ -64,11 +65,15 @@ public class AnimateListener : MonoBehaviour
 
     private void _Execute(/*string eventName*/)
     {
-        //print($"Executing: {_eventName}");
-        _animator.enabled = true;
-        _audioSource.enabled = true;
-        _isPlaying = true;
-        _Play();
+        if(!_isPlaying && !_executed)
+        {        
+            //print($"Executing: {_eventName}");
+            _animator.enabled = true;
+            _audioSource.enabled = true;
+            _isPlaying = true;
+            _executed = true;
+            _Play();
+        }
     }
 
     private void _Play()
