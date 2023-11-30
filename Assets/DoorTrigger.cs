@@ -65,7 +65,10 @@ public class DoorTrigger : MonoBehaviour
         if(other.tag == "Key" && !_doorIsOpen)
         {
             //fade to new scene
-            StartCoroutine(_OpenTheDoor());
+            //StartCoroutine(_OpenTheDoor());
+            _doorIsOpen = true;
+            _StopPlayingTheSequence(); // Stop playing the sequence sounds if they are playing
+            EventsController.RegisterEvent(_sceneEndedEventName); // Will cause the scene ended listener to move to the next scene
         }
     }
 
@@ -85,7 +88,7 @@ public class DoorTrigger : MonoBehaviour
 
     private IEnumerator _StartDoorLockedSequence()
     {   
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 1; i++)
         {
             if (!_doorIsOpen)
             {
@@ -101,7 +104,7 @@ public class DoorTrigger : MonoBehaviour
 
     private void _StopPlayingTheSequence()
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < 1; i++)
         {
             source[i].Stop();
         }

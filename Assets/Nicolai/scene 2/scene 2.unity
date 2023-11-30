@@ -288,7 +288,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -996,15 +996,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source:
-  - {fileID: 2057544103}
   - {fileID: 1421567757}
-  - {fileID: 1280983057}
   - {fileID: 920571203}
   clip:
-  - {fileID: 8300000, guid: 3b531a7da4af1f84ab7935fd05848c45, type: 3}
   - {fileID: 8300000, guid: 8f3a6d50196039a428d8a58a127059a5, type: 3}
-  - {fileID: 8300000, guid: 57bff502b91b2d74491aee2619e7f2e6, type: 3}
-  - {fileID: 8300000, guid: f621f4b2cfe144549a7b0fc278919662, type: 3}
   timer: 0
   paintingRB: {fileID: 1280983056}
   _sceneEndedEventName: SceneEnded
@@ -2037,7 +2032,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2911,7 +2906,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3545,7 +3540,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4093,7 +4088,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4891,7 +4886,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5838,7 +5833,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6009,7 +6004,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7310,7 +7305,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7714,7 +7709,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7830,7 +7825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1538118221
 Transform:
   m_ObjectHideFlags: 0
@@ -8085,6 +8080,7 @@ MonoBehaviour:
   source: {fileID: 1421567757}
   clip: {fileID: 8300000, guid: 53140e7579fba644cb80e8951157804a, type: 3}
   _delayInSeconds: 3
+  _startTime: 6
 --- !u!4 &1551581881
 Transform:
   m_ObjectHideFlags: 0
@@ -8172,7 +8168,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8946,7 +8942,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.679
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
