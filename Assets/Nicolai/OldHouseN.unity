@@ -17224,7 +17224,7 @@ MonoBehaviour:
   _clipInfo:
   - animationTriggerName: DoorOpenTrigger
     animationDelayInSeconds: 0.25
-    audioClip: {fileID: 8300000, guid: c5d4a83a64eb2b146b25275da30d1596, type: 3}
+    audioClip: {fileID: 0}
     audioExecutionPhase: 2
     audioDelayInSeconds: 0
     animationsClip: []
@@ -23708,7 +23708,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: PuchDoorTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: 51b337172bee82749a4e5004c42e8404, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip:
@@ -23716,7 +23716,7 @@ MonoBehaviour:
         animationDelayInSeconds: 0
         audioClip: {fileID: 8300000, guid: 93f03a0ed913fa6489442b0a5ba8b900, type: 3}
         audioExecutionPhase: 0
-        audioDelayInSeconds: 0
+        audioDelayInSeconds: 3
         animationsClip: []
         animationsClipPointer: 0
         animateable: {fileID: 0}
@@ -23984,7 +23984,7 @@ MonoBehaviour:
   _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
   _delayInSeconds: 0
   _repeat: 0
-  _postTriggerEventName: PlayerGitHit
+  _postTriggerEventName: SceneEnded
 --- !u!114 &683490737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37362,7 +37362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1105607515
 Transform:
   m_ObjectHideFlags: 0
@@ -45882,7 +45882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1349687342
 Transform:
   m_ObjectHideFlags: 0
@@ -56338,7 +56338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1591492435
 Transform:
   m_ObjectHideFlags: 0
@@ -70314,7 +70314,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -71970,7 +71970,7 @@ MonoBehaviour:
   _clipInfo:
   - animationTriggerName: SmashingDoorTrigger
     animationDelayInSeconds: 1.5
-    audioClip: {fileID: 8300000, guid: 8b8e3ae52a184e94484c80acb282593f, type: 3}
+    audioClip: {fileID: 0}
     audioExecutionPhase: 2
     audioDelayInSeconds: 0
     animationsClip: []
@@ -72881,7 +72881,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -73423,7 +73423,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
