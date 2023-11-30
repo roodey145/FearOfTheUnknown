@@ -7,7 +7,8 @@ public class AudioSourceUtility
 
     public static void PlayDelayedAudio(float delayInSeconds, AudioSource audioSource, AudioClip audioClip, System.Action StopAudio)
     {
-        GuideCharacterController.instance.StartCoroutine(_PlayDelayedAudio(delayInSeconds, audioSource, audioClip, StopAudio));
+        if(GuideCharacterController.instance.isActiveAndEnabled)
+            GuideCharacterController.instance.StartCoroutine(_PlayDelayedAudio(delayInSeconds, audioSource, audioClip, StopAudio));
     }
 
     private static IEnumerator _PlayDelayedAudio(float delayInSeconds, AudioSource audioSource, AudioClip audioClip, System.Action StopAudio)
