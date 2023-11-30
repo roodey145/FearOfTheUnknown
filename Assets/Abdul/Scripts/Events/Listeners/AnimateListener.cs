@@ -79,7 +79,7 @@ public class AnimateListener : MonoBehaviour
     {
         //print("Pointer: " + _clipsPointer + ", Clips Length: " + _clipInfo.Length);
         if (_clipInfo == null || (_clipInfo.Length <= _clipsPointer && !_repeat)
-            || !_animator.enabled || !_audioSource.enabled) return;
+            || !_animator.enabled || !_audioSource.enabled || (_repeat && !_isPlaying)) return;
 
         if (_repeat && _clipsPointer >= _clipInfo.Length) _clipsPointer = 0;
 

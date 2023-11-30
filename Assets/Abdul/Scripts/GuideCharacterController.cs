@@ -133,4 +133,9 @@ public class GuideCharacterController : MonoBehaviour
         _moving = false;
         _destinationPointer++;
     }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines(); // Make sure that the currentely running coroutines are stopped
+    }
 }
