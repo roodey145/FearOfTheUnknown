@@ -94,7 +94,7 @@ public class DoorTrigger : MonoBehaviour
             {
                 source[i].clip = clip[i];
                 source[i].Play();
-                if (i == 2) paintingRB.useGravity = true;
+                if (i == 0) paintingRB.useGravity = true;
                 yield return new WaitForSeconds(clip[i].length);
             }
             else break;
