@@ -55,7 +55,8 @@ public class paperController : MonoBehaviour
         {
             canvas.SetActive(false);
             newpaperOpen = false;
-            heartBeat.instance.heartBeating = true;
+            if(heartBeat.instance != null)
+                heartBeat.instance.heartBeating = true;
         }
     }
 }

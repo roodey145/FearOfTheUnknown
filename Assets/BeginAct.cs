@@ -7,7 +7,7 @@ public class BeginAct : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
     public float _delayInSeconds = 3;
-    public float _startTime = 6;
+    public float _startTime = 0;
 
     private void Start()
     {
