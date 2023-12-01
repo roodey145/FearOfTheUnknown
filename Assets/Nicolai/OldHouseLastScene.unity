@@ -24244,13 +24244,13 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: a51c549d5de259d42a23c5bb9f23c11c, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 1
       animationsClip:
       - animationTriggerName: 
         animationDelayInSeconds: 0
-        audioClip: {fileID: 8300000, guid: 6b259fb99fc0811418c89da8a0617ad6, type: 3}
+        audioClip: {fileID: 0}
         audioExecutionPhase: 0
         audioDelayInSeconds: 0
         animationsClip: []
@@ -24277,7 +24277,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: YellTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: 99f29df5aeea4b7478c10f1b515a5832, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip: []
