@@ -17,10 +17,10 @@ public class paperController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < actions.Length; i++)
-        {
-            actions[i].action.performed += _HideNewsPaper;
-        }
+        //for(int i = 0; i < actions.Length; i++)
+        //{
+        //    actions[i].action.performed += _HideNewsPaper;
+        //}
     }
 
     // Update is called once per frame
@@ -37,14 +37,14 @@ public class paperController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")// && controller input button
+        if (other.tag == "Player" && !newpaperOpen)// && controller input button
         {
-            source.PlayOneShot(clip);
-            canvas.SetActive(true);
+            //source.PlayOneShot(clip);
+            //canvas.SetActive(true);
             // change camera angle to look towards the room
             newpaperOpen = true;
             spotLight.enabled = true;
-            
+            heartBeat.instance.heartBeating = true;
         }
 
     }
