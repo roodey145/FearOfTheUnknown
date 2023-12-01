@@ -23543,23 +23543,10 @@ MonoBehaviour:
     clip:
       animationTriggerName: LookAroundTrigger
       animationDelayInSeconds: 0.25
-      audioClip: {fileID: 8300000, guid: 7a864af9f8764ec42a4acadf521cabc4, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0.5
-      animationsClip:
-      - animationTriggerName: GirlIdleTrigger
-        animationDelayInSeconds: 0
-        audioClip: {fileID: 8300000, guid: 9762475441cf7ba46b7f7c059fabe272, type: 3}
-        audioExecutionPhase: 2
-        audioDelayInSeconds: 0
-        animationsClip: []
-        animationsClipPointer: 0
-        animateable: {fileID: 0}
-        animateableExecutionPhase: 0
-        animateableDelayInSeconds: 0
-        callWhenDone:
-          m_PersistentCalls:
-            m_Calls: []
+      animationsClip: []
       animationsClipPointer: 0
       animateable: {fileID: 0}
       animateableExecutionPhase: 0
@@ -23628,7 +23615,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: 43970e95ae377214d853100e238d0d2c, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip: []
@@ -23648,7 +23635,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: 671459b861abbc44a8d1069910e90915, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip: []
@@ -23668,7 +23655,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: c88825a62240baa45a071b8b09642050, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip: []
@@ -23688,7 +23675,7 @@ MonoBehaviour:
     clip:
       animationTriggerName: GirlIdleTrigger
       animationDelayInSeconds: 0
-      audioClip: {fileID: 8300000, guid: 52851ca32abc8a94882d8b68255a9ad3, type: 3}
+      audioClip: {fileID: 0}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
       animationsClip: []
@@ -23711,20 +23698,7 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: 51b337172bee82749a4e5004c42e8404, type: 3}
       audioExecutionPhase: 2
       audioDelayInSeconds: 0
-      animationsClip:
-      - animationTriggerName: 
-        animationDelayInSeconds: 0
-        audioClip: {fileID: 8300000, guid: 93f03a0ed913fa6489442b0a5ba8b900, type: 3}
-        audioExecutionPhase: 0
-        audioDelayInSeconds: 0
-        animationsClip: []
-        animationsClipPointer: 0
-        animateable: {fileID: 0}
-        animateableExecutionPhase: 0
-        animateableDelayInSeconds: 0
-        callWhenDone:
-          m_PersistentCalls:
-            m_Calls: []
+      animationsClip: []
       animationsClipPointer: 0
       animateable: {fileID: 0}
       animateableExecutionPhase: 2
@@ -23755,68 +23729,12 @@ MonoBehaviour:
     movingAnimationTriggerName: GirlIdleTrigger
     speedIncrease: 1.5
   _destinationPointer: 0
-  _destinations:
-  - {fileID: 1704783182}
-  - {fileID: 711809944}
-  - {fileID: 1724902612}
-  - {fileID: 742226391}
+  _destinations: []
   _destination: {x: 0, y: 0, z: 0}
   _moveEvent: Move
   _moveAnimationTriggerName: WalkTrigger
   _moveStageId: 0
-  _animationsInfo:
-  - animationTriggerName: LookAroundTrigger
-    animationDelayInSeconds: 0.25
-    audioClip: {fileID: 8300000, guid: 7d000ccb134ada748bc95ba8781b97f8, type: 3}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0.5
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlRunTrigger
-    animationDelayInSeconds: 0.75
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 2
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlIdleTrigger
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 2
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: GirlIdleTrigger
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 0}
-    audioExecutionPhase: 2
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
+  _animationsInfo: []
   _animateEvent: Animate
   _animateStageId: 0
   _animator: {fileID: 683490729}
@@ -51587,7 +51505,6 @@ GameObject:
   - component: {fileID: 1462476176}
   - component: {fileID: 1462476175}
   - component: {fileID: 1462476177}
-  - component: {fileID: 1462476180}
   - component: {fileID: 1462476179}
   - component: {fileID: 1462476181}
   - component: {fileID: 1462476183}
@@ -51867,20 +51784,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1462476180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462476170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a635ee7b2b743b14281985a08ca0bc78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 99cd4742afb90f1419e41e0feef6b5fe, type: 3}
-  _eventName: DoorSlammed
 --- !u!114 &1462476181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61054,7 +60957,6 @@ GameObject:
   - component: {fileID: 1696441300}
   - component: {fileID: 1696441295}
   - component: {fileID: 1696441294}
-  - component: {fileID: 1696441293}
   m_Layer: 2
   m_Name: Destination (5)
   m_TagString: Untagged
@@ -61077,50 +60979,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1262023476}
   m_LocalEulerAnglesHint: {x: 0, y: -65.301, z: 0}
---- !u!114 &1696441293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696441291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5b885b68d014d4fb8ca6750024fad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: GirlWaitingAtTheLastDoorOfTheLongCorridor
-  _clipInfo:
-  - animationTriggerName: 
-    animationDelayInSeconds: 5
-    audioClip: {fileID: 8300000, guid: 52851ca32abc8a94882d8b68255a9ad3, type: 3}
-    audioExecutionPhase: 0
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: 
-    animationDelayInSeconds: 5
-    audioClip: {fileID: 8300000, guid: 78623d201220a9947a880e7f7a72db5c, type: 3}
-    audioExecutionPhase: 0
-    audioDelayInSeconds: 10
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  _repeat: 1
-  _repeatStopEventName: DadCameToTheLongCorridor
-  _repeatDelayInSeconds: 15
-  _repeatStopCondition: {fileID: 0}
 --- !u!82 &1696441294
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63023,7 +62881,6 @@ GameObject:
   - component: {fileID: 1724902620}
   - component: {fileID: 1724902619}
   - component: {fileID: 1724902618}
-  - component: {fileID: 1724902617}
   m_Layer: 2
   m_Name: Destination (3)
   m_TagString: Untagged
@@ -63119,63 +62976,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1724902617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724902611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5b885b68d014d4fb8ca6750024fad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: GirlWaitingInTheHole
-  _clipInfo:
-  - animationTriggerName: 
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 8300000, guid: 43970e95ae377214d853100e238d0d2c, type: 3}
-    audioExecutionPhase: 0
-    audioDelayInSeconds: 0
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: 
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 8300000, guid: 52851ca32abc8a94882d8b68255a9ad3, type: 3}
-    audioExecutionPhase: 0
-    audioDelayInSeconds: 10
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  - animationTriggerName: 
-    animationDelayInSeconds: 0
-    audioClip: {fileID: 8300000, guid: 671459b861abbc44a8d1069910e90915, type: 3}
-    audioExecutionPhase: 0
-    audioDelayInSeconds: 10
-    animationsClip: []
-    animationsClipPointer: 0
-    animateable: {fileID: 0}
-    animateableExecutionPhase: 0
-    animateableDelayInSeconds: 0
-    callWhenDone:
-      m_PersistentCalls:
-        m_Calls: []
-  _repeat: 1
-  _repeatStopEventName: SawTheGirl
-  _repeatDelayInSeconds: 15
-  _repeatStopCondition: {fileID: 1332341850}
 --- !u!82 &1724902618
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65373,7 +65173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: SawTheGirl
+  _eventName: Move
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
