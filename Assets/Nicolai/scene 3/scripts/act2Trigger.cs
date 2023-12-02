@@ -38,7 +38,7 @@ public class act2Trigger : MonoBehaviour
                 spotLight.range = rangeValue;
                 girl.SetActive(false);
                 portrait.useGravity = true;
-                constructionLight.instance.startBlink = true;
+                //constructionLight.instance.startBlink = true;
             }
 
         }
