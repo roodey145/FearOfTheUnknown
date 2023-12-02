@@ -4230,8 +4230,8 @@ GameObject:
   - component: {fileID: 109976084}
   - component: {fileID: 109976083}
   - component: {fileID: 109976082}
-  - component: {fileID: 109976081}
   - component: {fileID: 109976080}
+  - component: {fileID: 109976086}
   m_Layer: 2
   m_Name: TurnOffFirstLightLine
   m_TagString: Untagged
@@ -4350,20 +4350,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &109976081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109976078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShuFirsttLightLineDown
-  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!114 &109976082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4377,7 +4363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShuFirsttLightLineDown
+  _eventName: ShuFirsttLightLineDown1
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -4437,6 +4423,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.3841636, z: 1.7666448}
   m_Center: {x: 0, y: 0.6920818, z: -0.049893558}
+--- !u!114 &109976086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109976078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShuFirsttLightLineDown1
+  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: AudioEnded
 --- !u!1001 &119925582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56026,8 +56029,8 @@ GameObject:
   - component: {fileID: 1597025020}
   - component: {fileID: 1597025019}
   - component: {fileID: 1597025018}
-  - component: {fileID: 1597025017}
   - component: {fileID: 1597025016}
+  - component: {fileID: 1597025022}
   m_Layer: 2
   m_Name: ShutsHalfTheLightDown
   m_TagString: Untagged
@@ -56146,20 +56149,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1597025017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597025014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShutLightDown_1
-  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!114 &1597025018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56173,7 +56162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShutLightDown_1
+  _eventName: ShutLightDown
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -56233,6 +56222,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.3841636, z: 4.1412907}
   m_Center: {x: 0, y: 0.6920818, z: -0.009196758}
+--- !u!114 &1597025022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597025014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutLightDown
+  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: AudioEnded
 --- !u!1001 &1599876455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58331,8 +58337,8 @@ GameObject:
   - component: {fileID: 1662245009}
   - component: {fileID: 1662245008}
   - component: {fileID: 1662245007}
-  - component: {fileID: 1662245006}
   - component: {fileID: 1662245005}
+  - component: {fileID: 1662245011}
   m_Layer: 2
   m_Name: TurnOffSecondLightLine
   m_TagString: Untagged
@@ -58451,20 +58457,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1662245006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662245003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShutSecondLightLineDown
-  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!114 &1662245007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58478,7 +58470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShutSecondLightLineDown
+  _eventName: ShutSecondLightLineDown1
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -58538,6 +58530,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.3841636, z: 1.7666448}
   m_Center: {x: 0, y: 0.6920818, z: -0.049893558}
+--- !u!114 &1662245011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662245003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutSecondLightLineDown1
+  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: AudioEnded
 --- !u!1001 &1665059854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64643,7 +64652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b42ee0b7b8de14bb8776b06f12b93c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _environmentColor: {r: 0, g: 0, b: 0, a: 0}
+  _environmentColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!4 &1832463980
 Transform:
   m_ObjectHideFlags: 0
@@ -72839,8 +72848,8 @@ GameObject:
   - component: {fileID: 2108688091}
   - component: {fileID: 2108688090}
   - component: {fileID: 2108688089}
-  - component: {fileID: 2108688088}
   - component: {fileID: 2108688087}
+  - component: {fileID: 2108688093}
   m_Layer: 2
   m_Name: TurnOffThirdLightLine
   m_TagString: Untagged
@@ -72959,20 +72968,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2108688088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108688085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShutThirdLightLineDown
-  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!114 &2108688089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72986,7 +72981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShutThirdLightLineDown
+  _eventName: ShutThirdLightLineDown1
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -73046,6 +73041,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.3841636, z: 1.7666448}
   m_Center: {x: 0, y: 0.6920818, z: -0.049893558}
+--- !u!114 &2108688093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108688085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: ShutThirdLightLineDown1
+  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: AudioEnded
 --- !u!1 &2109298664
 GameObject:
   m_ObjectHideFlags: 0
