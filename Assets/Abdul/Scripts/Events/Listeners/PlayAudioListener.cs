@@ -6,17 +6,18 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class PlayAudioListener : Listener
 {
-    private AudioSource _audioSource;
-    [SerializeField] private AudioClip _clip;
-    [SerializeField] private float _delayInSeconds = 0f;
-    [SerializeField] private bool _repeat = false;
+    protected AudioSource _audioSource;
+    [SerializeField] protected AudioClip _clip;
+    [SerializeField] protected float _delayInSeconds = 0f;
+    [SerializeField] protected bool _repeat = false;
 
-    [SerializeField] private string _postTriggerEventName = "AudioEnded";
+    [SerializeField] protected string _postTriggerEventName = "AudioEnded";
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+        _audioSource.Stop();
     }
 
     // Update is called once per frame

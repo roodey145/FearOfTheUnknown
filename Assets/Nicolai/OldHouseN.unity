@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -6627,6 +6627,126 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &162883614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 216763044545099686, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 683490724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &162883617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162883614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5167dd1358f9a4048a72f74d0df1118a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: GirlScream
+  _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: PlayerGitHit
+  _meshRenderer: {fileID: 0}
+--- !u!82 &162883618
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162883614}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &164452996
 GameObject:
   m_ObjectHideFlags: 0
@@ -22843,6 +22963,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.030355867
       objectReference: {fileID: 0}
+    - target: {fileID: 3501836223160941379, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501836223160941379, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a62af6d6d2d048d4e9eff035389b80dc, type: 2}
     - target: {fileID: 3742407835892290726, guid: d7fad2304dfbc2b4e96938a509cb92fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23488,11 +23618,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 683490735}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+      addedObject: {fileID: 683490737}
+    - targetCorrespondingSourceObject: {fileID: 216763044545099686, guid: d7fad2304dfbc2b4e96938a509cb92fc,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 683490737}
+      addedObject: {fileID: 162883618}
+    - targetCorrespondingSourceObject: {fileID: 216763044545099686, guid: d7fad2304dfbc2b4e96938a509cb92fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 162883617}
   m_SourcePrefab: {fileID: 100100000, guid: d7fad2304dfbc2b4e96938a509cb92fc, type: 3}
 --- !u!1 &683490725 stripped
 GameObject:
@@ -23968,23 +24102,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &683490735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683490725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: GirlScream
-  _clip: {fileID: 8300000, guid: c80e7f9f97bbcd94eba1e00b7589f8b6, type: 3}
-  _delayInSeconds: 0
-  _repeat: 0
-  _postTriggerEventName: PlayerGitHit
 --- !u!114 &683490737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70225,7 +70342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShutLightDown
+  _eventName: ShutLightDown0
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -70297,7 +70414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventName: ShutLightDown
+  _eventName: ShutLightDown0
   _clip: {fileID: 8300000, guid: 3b01943b455071842a1c16e5dad9e91f, type: 3}
   _delayInSeconds: 4
   _repeat: 0
@@ -73299,7 +73416,6 @@ GameObject:
   - component: {fileID: 2044257765}
   - component: {fileID: 2044257764}
   - component: {fileID: 2044257763}
-  - component: {fileID: 2044257767}
   - component: {fileID: 2044257768}
   - component: {fileID: 2044257769}
   m_Layer: 2
@@ -73337,7 +73453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTag: Player
-  _eventName: ShutLightDown
+  _eventName: ShutLightDown0
   _passiveEventTriggerDelay: 0
   _repeatable: 0
   _hasBeenExecuted: 0
@@ -73397,20 +73513,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2044257767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044257761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3e9c677f155ea47b94f48272f19e73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShutLightDown
-  _clip: {fileID: 8300000, guid: 46a20caa0e57c7d4bb9a1bdb3b2e15c1, type: 3}
 --- !u!82 &2044257768
 AudioSource:
   m_ObjectHideFlags: 0
