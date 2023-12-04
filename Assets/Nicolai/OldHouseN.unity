@@ -68278,7 +68278,6 @@ GameObject:
   - component: {fileID: 1861195973}
   - component: {fileID: 1861195975}
   - component: {fileID: 1861195974}
-  - component: {fileID: 1861195976}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -68386,28 +68385,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1861195976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861195972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bdd43bf5c61934bb4db87c84af15b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventName: ShutLightDown
-  _blink: 0
-  _maxLightIntensity: 1
-  _minLightIntensity: 0.5
-  _shutDown: 0
-  _randomize: 1
-  _randomizePercentage: 0.1
-  _durationInSeconds: 3
-  _blinkingSpeedPerSecond: 5
-  _emissionColorName: _EmissionColor
 --- !u!1 &1862963248
 GameObject:
   m_ObjectHideFlags: 0
