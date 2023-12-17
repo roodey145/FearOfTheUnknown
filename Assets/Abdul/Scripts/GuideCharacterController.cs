@@ -28,6 +28,7 @@ public class GuideCharacterController : MonoBehaviour
 
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioSource _audioSource;
+
     private NavMeshAgent _agent;
     private float _agentInitialSpeed = 0;
 
@@ -41,10 +42,12 @@ public class GuideCharacterController : MonoBehaviour
     {
         instance = this;
 
+        // Create an event listener to listen for "Move" triggers
         EventListener moveEvent = new EventListener(
             (string eventName) => eventName == _moveEvent, 
             _MoveToNextDestination);
 
+        // Create an event listener that listens for "Animate" Listener
         EventListener animateEvent = new EventListener(
             (string eventName) => eventName == _animateEvent,
             _TriggerNextAnimation);

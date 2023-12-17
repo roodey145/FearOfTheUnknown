@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SimpleEvent : Event
 {
-    
-
     // Start is called before the first frame update
     void Start()
     {
