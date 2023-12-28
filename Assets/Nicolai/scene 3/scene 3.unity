@@ -344,6 +344,8 @@ GameObject:
   - component: {fileID: 29899015}
   - component: {fileID: 29899014}
   - component: {fileID: 29899013}
+  - component: {fileID: 29899017}
+  - component: {fileID: 29899018}
   m_Layer: 0
   m_Name: wine_bottles_01_bordeaux.002 (1)
   m_TagString: Untagged
@@ -359,12 +361,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29899011}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.1389, y: 0.9781, z: 3.6466}
-  m_LocalScale: {x: 111.059784, y: 111.059784, z: 111.059784}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.46328354, y: -1.5849, z: 7.646481}
+  m_LocalScale: {x: 111.05982, y: 111.059784, z: 111.05982}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1413927252}
+  m_Father: {fileID: 860365752}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &29899013
 Rigidbody:
@@ -410,9 +412,9 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3134507691543753287, guid: a2dca99e8d0c0994e8a4d3e7890283aa, type: 3}
 --- !u!23 &29899015
@@ -465,6 +467,44 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29899011}
   m_Mesh: {fileID: -3134507691543753287, guid: a2dca99e8d0c0994e8a4d3e7890283aa, type: 3}
+--- !u!114 &29899017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29899011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22433dc2d7fe0ea439c0cc6769f35027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: PlayCurtainScene
+  _forceToAddToVelocity: {x: 0, y: 0, z: -0.7}
+  _rigidbody: {fileID: 0}
+--- !u!136 &29899018
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29899011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0003837242
+  m_Height: 0.0030765014
+  m_Direction: 2
+  m_Center: {x: -2.2437737e-18, y: -0.000025966257, z: 0.001479172}
 --- !u!1001 &37631924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4074,7 +4114,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e9adb7ab620690e4591e5c93bb77b671,
         type: 3}
       propertyPath: m_Name
-      value: Curtain
+      value: CurtainScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4082,7 +4122,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9adb7ab620690e4591e5c93bb77b671,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 906416381}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9adb7ab620690e4591e5c93bb77b671,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 240112501}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9adb7ab620690e4591e5c93bb77b671,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 29899012}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9adb7ab620690e4591e5c93bb77b671, type: 3}
 --- !u!4 &860365752 stripped
@@ -4765,6 +4813,152 @@ MonoBehaviour:
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!1 &906416380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 906416381}
+  - component: {fileID: 906416383}
+  - component: {fileID: 906416382}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906416381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906416380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.12685816, y: -0.035318732, z: -0.0045198756, w: 0.9912816}
+  m_LocalPosition: {x: -0.014499664, y: -0.1343, z: -0.1453}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 860365752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906416382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906416380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779e65f5c33a400458d1b6a8499f1fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventName: PlayCurtainScene
+  _clip: {fileID: 8300000, guid: a8214e54488a779458dddffbb6fa19ee, type: 3}
+  _delayInSeconds: 0
+  _repeat: 0
+  _postTriggerEventName: AudioEnded
+--- !u!82 &906416383
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906416380}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!64 &944649154
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7169,10 +7363,6 @@ PrefabInstance:
         type: 3}
       insertIndex: 89
       addedObject: {fileID: 1365565063}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2dca99e8d0c0994e8a4d3e7890283aa,
-        type: 3}
-      insertIndex: 105
-      addedObject: {fileID: 29899012}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2254663222843195260, guid: a2dca99e8d0c0994e8a4d3e7890283aa,
         type: 3}
