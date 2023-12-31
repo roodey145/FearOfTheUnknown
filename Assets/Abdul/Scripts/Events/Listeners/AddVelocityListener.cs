@@ -5,9 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class AddVelocityListener : Listener
 {
+    [Header("Froce Settings")]
     [SerializeField] private Vector3 _forceToAddToVelocity = Vector3.zero;
+    [SerializeField] private Space _forceSpace = Space.World;
 
-    [SerializeField] private Rigidbody _rigidbody;
+    private Rigidbody _rigidbody;
 
     protected override void _Action()
     {
