@@ -4,7 +4,7 @@ using UnityEngine;
 using static Unity.VisualScripting.Member;
 using UnityEngine.Experimental.GlobalIllumination;
 
-public class constructionLight : MonoBehaviour
+public class constructionLight : Listener
 {
     public static constructionLight instance;
     public AudioSource source;
@@ -20,6 +20,7 @@ public class constructionLight : MonoBehaviour
     float updatedOnValue;
     public Material material;
     public bool startBlink = false;
+    [SerializeField] private bool _turnLightOff = false;
 
 
     void Start()
@@ -31,6 +32,17 @@ public class constructionLight : MonoBehaviour
 
     void Update()
     {
+        if(_turnLightOff)
+        {
+            spotLight.enabled = false;
+            if (material != null)
+            {
+                material.SetColor("_EmissionColor", Color.black);
+
+            }
+            return;
+        }
+
         if (startBlink) 
         { 
             if (spotLight.enabled == false)
@@ -78,5 +90,10 @@ public class constructionLight : MonoBehaviour
     void newOnValue()
     {
         updatedOnValue = Random.Range(minBlinkIntervalOn, maxBlinkIntervalOn);
+    }
+
+    protected override void _Action()
+    {
+        _turnLightOff = true;
     }
 }

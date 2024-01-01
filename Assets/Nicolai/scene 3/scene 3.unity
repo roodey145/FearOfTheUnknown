@@ -10172,7 +10172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetTag: Player
   _eventName: PlayCurtainScene
-  _passiveEventTriggerDelay: 0.5
+  _passiveEventTriggerDelay: 3
   _repeatable: 0
   _hasBeenExecuted: 0
 --- !u!54 &1633153776
@@ -10593,6 +10593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d64a26be940ca4fbd41c17521ba657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _eventName: PlayCurtainScene
   source: {fileID: 1702638343}
   clip: {fileID: 8300000, guid: 4d776d117b0b8a44688651065065fe15, type: 3}
   spotLight: {fileID: 2098581586}
